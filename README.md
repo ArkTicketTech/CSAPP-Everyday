@@ -1,6 +1,7 @@
 # CSAPP-Notes 
 <h3>本群残酷 谨慎进群❗️❗❗️</h3>
 
+## 规则
 【CSAPP阅读计划-0期】
 
 - 欢迎对作业任务和群规提交建议；
@@ -15,11 +16,16 @@
   - 坚持不到两周退群，请发退群红包；
   - N进宫；
 
-【Lab条款】
-- CSAPP有配套课程 [CMU 15213](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/schedule.html) [youtube上也有视频课程](https://www.youtube.com/playlist?list=PLcQU3vbfgCc9sVAiHf5761UUApjZ3ZD3x)
-  - 我们需要按照 schedule 完成 lab
-  - ddl前未完成的同学需要发群人数10倍的红包
+## 资料
+CSAPP是[CMU 15213](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/schedule.html)的指定教材 可以参考课程学习
+[youtube上也有视频课程](https://www.youtube.com/playlist?list=PLcQU3vbfgCc9sVAiHf5761UUApjZ3ZD3x)
+打卡教材为[第三版原版书](./textbooks)
+
+## 日程表
+2021/09/26 - 2021/10/03 Week1
+Overview | Bits, Bytes, & Integers
+
+## Members
+TODO
 
 如果本群感兴趣，也接受群规，请加群主微信并备注来意: constant_variation。谢谢！
-
-![image](https://github.com/ArkTicketTech/CSAPP-Notes/blob/main/wechat_group.jpeg?raw=true)
