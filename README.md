@@ -18,7 +18,9 @@
 
 ## 资料
 CSAPP是[CMU 15213](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/schedule.html)的指定教材 可以参考课程学习
+
 [youtube上也有视频课程](https://www.youtube.com/playlist?list=PLcQU3vbfgCc9sVAiHf5761UUApjZ3ZD3x)
+
 打卡教材为[第三版原版书](./textbooks)
 
 ## 日程表
