@@ -24,10 +24,17 @@ CSAPP是[CMU 15213](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/s
 打卡教材为[第三版原版书](./textbooks)
 
 ## 日程表
+日程表参考： https://www.cs.cmu.edu/~213/schedule.html
+
 2021/09/26 - 2021/10/03 Week1
 Overview | Bits, Bytes, & Integers
 
 ## Members
 TODO
 
+## More
 如果本群感兴趣，也接受群规，请加群主微信并备注来意: constant_variation。谢谢！
+
+## 广告区
+可以关注微扰君的[力扣账号](https://leetcode-cn.com/u/wfnuser/) 每天都会更新每日一题
+也欢迎来微扰君开的剧本杀店[【悖论13】](http://www.dianping.com/shop/G3e08uNvVM4U5Hg3) 玩耍
