@@ -1,4 +1,4 @@
-# CSAPP 9/27 Notes
+# CSAPP 
 ## 1.1 Information Is Bits + Context
 Computer system = hardware + software.
 
