@@ -1,0 +1,17 @@
+* Ch. 1 A Tour of Computer Systems
+- shell 第一个 word 不是内置命令的话，会默认看作可执行文件
+- 硬件系统
+  - 总线
+    传输固定个字节组成的字，一般是 4 字节(32 位)或 8 字节(64 位)
+  - I/O 设备
+    通过控制器或适配器与总线连接，控制器是芯片组，适配器是插在主板插槽中的卡
+  - 内存
+    内存由一系列动态随机读取存储器(dynamic random access memory)组成
+  - 处理器
+    中央处理器(CPU)负责执行内存中的指令，其中包括程序计数器(program counter)，指
+    向内存中的地址，CPU 负责执行 PC 指向的指令。CPU 的基础操作包括寄存器和内存之
+    间的内容拷贝，数学运算，跳转(覆盖 PC 的内容)等
+- 存储器速度
+  L1 cache，几万 byte，速度几乎和寄存器一样；L2 cache，十万 Mb，速度比 L1 cache
+  慢 5 倍，但仍然比内存快 5-10 倍，使用静态随机读取存储器结构(static random
+  access memory)
