@@ -35,3 +35,12 @@
   * Store: store data from a register to memory.
   * Operate: arithmetic operations such as `+`, `-`, `*`, `/`.
   * Jump: update the PC with new values (`if-else` branching).
+
+### Running the `hello` Program
+* First we need to type the command `./hello` in the terminal, as we tyep the command, the shell program **reads the characters into a register** and **store it in memory**.
+ ![Screen Shot 2021-09-28 at 7 53 47 PM](https://user-images.githubusercontent.com/26990923/135195165-e721318c-0e51-4ba4-a344-e37d24916b68.png)
+
+* Once we hit `enter`, we are done typing the command, and the shell program loads the executable file `hello` from **disk** to **memory** via DMA (which means data travel from disk directly to memory without passing through resiter file).
+ ![Screen Shot 2021-09-28 at 7 56 43 PM](https://user-images.githubusercontent.com/26990923/135195426-b526e98e-4b6d-4e3b-9e50-c24048dc5b63.png)
+* Once the program is loaded to memory, the CPU executes the instructions it contains. In this particular program `hello`, the CPU loads the string `"hello"` from memory to the output register file, which displays it on screen.
+ ![Screen Shot 2021-09-28 at 7 59 11 PM](https://user-images.githubusercontent.com/26990923/135195646-8fdce31f-cf18-4cff-bdc6-e6825c80d540.png)
