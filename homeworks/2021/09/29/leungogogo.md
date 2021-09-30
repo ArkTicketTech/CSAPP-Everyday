@@ -11,7 +11,7 @@
   ![Screen Shot 2021-09-29 at 7 10 21 PM](https://user-images.githubusercontent.com/26990923/135374128-4dee2d3a-16a6-41e0-8692-5b6280c285a3.png)
 ## 1.7 The Operating System Manages the Hardware
 ### The Purposes of OS
-1. Protects the hardware from malicious application.
+1. Protects the hardware from malicious applications.
 2. Provides a uniform mechanisms/interfaces for us to manipulate different hardware devices.
 ![Screen Shot 2021-09-29 at 7 13 32 PM](https://user-images.githubusercontent.com/26990923/135374404-3b76f320-0adf-45a8-b051-b0301b063335.png)
 
@@ -25,4 +25,21 @@
    2. Restore the context of the new process.
    3. pass control to the new process.
     ![Screen Shot 2021-09-29 at 7 18 46 PM](https://user-images.githubusercontent.com/26990923/135374899-a636cbbc-99ea-494d-860a-a9daa7a60d26.png)
+* The transition from one process to another is managed by **kernel**, which is a portion of the OS code always resident in the memory. 
+* System call interrupts processes and transfer control to the kernel.
 
+### Threads
+* A process consists of multiple threads, different threads in the same process share the same code and global data.
+  * Threads are more efficient than processes since it's easier to share data between multiple threads.
+### Virtual Memory
+* Virtual memory is an abstraction that provides each process with the illusion that it has exclusive use of the main memory.
+* Each process has the same view of memory, which is called its own **virtual address space**, and it consists of the following sections:
+  * Program code and data
+  * Heap
+  * Shared libraries
+  * Stack
+  * Kernel memory (not accessible by application program)
+    ![Screen Shot 2021-09-29 at 8 32 47 PM](https://user-images.githubusercontent.com/26990923/135382687-720e02a4-acbb-4c41-b12a-6d62fbdfbba7.png)
+
+### File
+* A file is a sequence of bytes, and every I/O device such as disks, keyboard, display and even network can be modeled using the file API.
