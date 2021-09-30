@@ -1,0 +1,25 @@
+chap 2.2.6 扩展一个数字的位表示
+  零扩展：在数字二进制表示的开头加0就可以将无符号数转换为更大的数据类型。
+  符号扩展：对于补码表示的数字，需要在开头加符号位的数字来转换为更大的数据类型。
+  当把short类型的数转换为unsigned类型时，会先扩展位数再进行转换。
+ 
+chap 2.2.7 截断数字
+  丢弃高位。
+
+chap 2.2.8 关于有符号数和无符号数的建议
+  有符号数到无符号数的隐式强制类型转换会导致某些非直观的行为并引起程序错误。
+  一个例子：
+   void memcpy(void *dest, void *src, size_t n);
+   
+   #define KSIZE 1024
+   char kbuf[KSIZE];
+   
+   int copy_from_kernel(void *user_dest, int maxlen) {
+    int len = KSIZE < maxlen ? KSIZE : maxlen;
+    memcpy(user_dest, kbuf, len);
+    return len;
+   }
+  上述copy_from_kernel是暴露给用户的拷贝一些操作系统维护的数据的方法。
+  虽然方法内部做了复制长度的校验，但是如果恶意用户传入一个负数，那么会绕过长度的校验传给memcpy一个非常大的无符号整数，这样就可能会泄露内核数据。
+  
+  避免错误的一种方法是绝不使用无符号数。
