@@ -1,0 +1,17 @@
+* Information Is Bits + Context
+  1. 计算机中所有的文件都是使用0和1表示，通常将使用可见ASCII码编码的文件叫做文本文件
+  2. 发明C语言是为了开发Unix操作系统，是从实用角度出发，不像一些编程语言是从学术界过来
+  3. C语言的特点小巧(易于移植)，简单(如果你能搞懂 const void const ****的话)
+* Programs Are Translated by Other Programs into Different Forms
+  1. C语言是编译型语言，编译过程为
+     1. 预处理
+     2. 编译为汇编代码，-O 优化器作用的阶段
+     3. 转换为机器码
+     4. 链接
+* Processors Read and Interpret Instructions Stored in Memory
+  1. 硬件组成
+     - 总线
+     - IO设备
+       - 通过Controller或者Adaptor连接到I/O bus
+     - 处理器
+     - 内存
