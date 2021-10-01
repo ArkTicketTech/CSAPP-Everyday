@@ -1,0 +1,20 @@
+* Caches Matter
+  为了解决CPU和存储速度不匹配，引入了cache memories
+  - CPU缓存L1-L3
+  - DRAM
+  - Local Disk
+  - Remote Storage
+* The Operating System Manages the Hardware
+  - Process
+  - Threads
+* Virtual Memory
+  - 内核地址
+  - App Stack
+  - Shared Libraries
+  - App Heap
+  - 代码块和数据块
+* Concurrency and Parallelism
+  - Thread-Level Concurrency
+    - uniprocesser system 分时切换
+    - multi-core processor 每个核运行一个线程
+    - simultaneous multi-threading 每个核运行多个线程，其实也是分时切换

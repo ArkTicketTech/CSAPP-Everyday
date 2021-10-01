@@ -30,7 +30,26 @@ CSAPP是[CMU 15213](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/s
 Overview | Bits, Bytes, & Integers
 
 ## Members
-TODO
+### sickles
+bill0412
+Jamesleons
+moon548834
+wfnuser
+willhunger
+wtrience
+chunjieshawn
+HITTOM
+jianzhc
+leungogogo
+lih627
+lzbz
+thinkiny
+tommyjiang
+FHYN
+fltenwall
+jacoesad
+### left
+
 
 ## More
 如果本群感兴趣，也接受群规，请加群主微信并备注来意: constant_variation。谢谢！

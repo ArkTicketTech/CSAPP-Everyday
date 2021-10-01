@@ -1,0 +1,14 @@
+https://www.mubucm.com/doc/5eofUcVIab8:
+
+Chapter1. A tour of computer systems
+    1.0
+    1.1 Information is Bits + Context
+        All information in the computer systems is represented by a bunch of bits. Under different contexts, the same bytes can be viewed as different objects.
+    1.2 Programs Are Translated by Other Programs into Different Forms
+        In Unix System, compiler driver translates the source hello.c file into executable object program. The translation consists of 4 phrases:
+            preprocessing phrase: preprocessor replace the directives started with "#" to original contents, resulting the hello.i file.
+            compilation phrase: compiler translates the hello.i file into hello.s, which contains the assembly-language program.
+            assembly phrase: assembler translates hello.s file into machine-language instructions, knowns as relocatable object program, into a "hello.o" file.
+            linking phrase: linker merges separate library into the file, resulting an executable.
+    1.3 It Pays to Understand How Compilation Systems Work
+        optimize performance, link-time errors, security and vulnerability

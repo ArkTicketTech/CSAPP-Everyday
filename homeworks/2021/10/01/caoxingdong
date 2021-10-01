@@ -1,0 +1,15 @@
+https://mubu.com/app/edit/home/US2EmgNtX8
+
+1.4 Processors Read and Interpret Instructions Stored in Memory
+    1.4.0 How to use shell to run the executable
+    1.4.1 Hardware organization of a system
+        Buses: electronic conduits carrying bites between other components. Transferred fixed-size bytes: words. 
+        I/O devices: keyboard, mouse, display, disk drive
+        Main memory: dynamic random access memory (DRAM)
+        Processor: CPU (core: program counter). Processor reads the instruction pointed by the PC, execute it, then PC moves to the next instruction. Simple operations: load, store, operate, jump
+
+    1.4.2 Running the hello program
+        type the command into shell,  codes travel from disk to memory
+        process executes the instructions. String copied from memory to register, then to display.
+
+
