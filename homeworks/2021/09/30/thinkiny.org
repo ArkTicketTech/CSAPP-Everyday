@@ -1,0 +1,17 @@
+* Addressing and Byte Ordering
+  0x0102
+  - Big endian    => 01 02
+  - Little endian => 02 01
+* bits operation
+  - ~ 取反
+  - & 并
+  - | 或
+  - ^ 异或
+* Two's-Complement Encodings
+  - 第一位是符号位
+  - B2T(1111) => -1*2^3 + 1*2^2 + 1*2^1 + 1*2^0 = -1
+* Truncating Numbers
+* Convertion between unsigned and signed
+  - geetpeername 导致的安全漏洞
+* Two's-Complement 加减
+  - a - b = a + (~b + 1)
