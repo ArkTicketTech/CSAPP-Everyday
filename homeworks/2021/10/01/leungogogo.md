@@ -26,6 +26,7 @@
   * Hyperthreading: Allows a single CPU to execute multiple flows of control.
     * Having more than one copies of some parts of the CPU, such as PC, and register files, while having one copy of other parts.
     * Swtiching between threads on a cycle-by- cycle basis. 
+
     ![Screen Shot 2021-10-01 at 7 38 26 PM](https://user-images.githubusercontent.com/26990923/135701224-d093ddd2-2e0e-49ff-a738-5d99a5408520.png)
 ### Instruction-Level Parallelism
 * Pipelining: Split the execution of instructions into different steps, and organize the processor hardware as a series of stages, each performing one step.
