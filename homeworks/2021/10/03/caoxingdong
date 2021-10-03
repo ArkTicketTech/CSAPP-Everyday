@@ -1,0 +1,19 @@
+1.5 Caches Matter
+    Larger storage devices are much slower than smaller ones. Faster storage are more expensive than slower ones.
+    Cache memories: L1, L2 cache. SRAM(static random access memory)
+
+1.6 Storage Devices Form a Hierarchy
+    memory hierarchy
+
+1.7 The Operating System Manages the Hardware
+    1.7.0 
+        operating system: a layer of software interposed between the application program and the hardware. 
+        Two main purposes: protect application misuse the hardware; provide applications with simple and uniform mechanisms. 
+        Three fundamental abstractions: processes, virtual memory, files.
+
+    1.7.1 
+        Process: operating system's abstraction for the running programs. 
+        Context: current values of the PC, the register file, and the contents of main memory of the running process. 
+        context switch: save the context of the current process, restore the context of the new process, and pass the control to the new process
+
+
