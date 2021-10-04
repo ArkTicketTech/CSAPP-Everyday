@@ -1,0 +1,27 @@
+* Problem 2.31
+#+begin_src c++ :tangle "2_30.cpp"
+int tadd_ok(int x, int y) {
+  int z = x + y;
+  return !(((z >> 31) ^ (x >> 31)) & 1);
+}
+#+end_src
+
+* Problem 2.32
+#+begin_src c++ :tangle "2_31.cpp"
+int tsub_ok(int x, int y) {
+  return (x - y) + y == x;
+}
+#+end_src
+
+* Problem 2.36
+#+begin_src c++ :tangle "2_36.cpp"
+#include <stdint.h>
+
+int tmul_ok(int x, int y) {
+  int64_t m = (int64_t)x * y;
+  return m == (int)m;
+}
+#+end_src
+
+* Problem 2.76
+ - use size_t
