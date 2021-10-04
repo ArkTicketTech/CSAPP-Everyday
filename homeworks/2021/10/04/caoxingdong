@@ -1,0 +1,15 @@
+kernel: manage the transition from one process to another, a portion of operating system code always resident in the main memory. Process will execute a system call instruction to transfer control to kernel.
+1.7.2 Thread: a process consists of multiple running units, called threads, running in the context of process and share the same code and data
+1.7.3 virtual memory: Virtual memory is an abstraction that provides each process with the illusion that it has exclusive use of the main memory.
+    Program code and data: initialized directly from the contents of an executable object file, fixed.
+    heap: expands and contracts dynamically, malloc and free
+    Shared libraries
+    stack: implement function calls, expands and contracts dynamically
+    Kernel virtual memory: not able to read/write, directly call. only able to invoke the kernel to perform these operations
+
+1.7.4 files
+    a sequence of bytes. every I/O, disk, keyboard, display or networks can be modeled as files.
+
+1.8 networks
+    network can be viewed as I/O.
+
