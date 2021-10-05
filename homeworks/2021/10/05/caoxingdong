@@ -1,0 +1,21 @@
+1.9 Important themes
+    1.9.1 Amdahl’s Law
+    1.9.2 Concurrency and Parallelism
+        concurrency: a system with multiple, simultaneous activities; parallelism: the use of concurrency to make the system run faster. parallelism at different levels:
+            Thread-Level Concurrency
+                thread: have multiple control flows executing within a single process.
+
+            Instruction-Level Parallelism:
+                execute multiple instructions at one time
+
+            Single-Instruction, Multiple-Data (SIMD) Parallelism: a single instruction to cause multiple operations to be performed in parallel
+
+
+    1.9.3 importance of abstraction
+        instruction set architecture provides an abstraction of the actual processor hardware
+        files, virtual memory, process, virtual machine
+
+
+1.10 summary
+    information: bytes and context, hardware, abstraction, network
+
