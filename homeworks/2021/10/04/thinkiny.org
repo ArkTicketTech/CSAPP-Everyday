@@ -1,0 +1,26 @@
+* Problem 2.42
+#+begin_src c++
+int div16(int x) {
+  if (x >= 0) {
+    return x >> 4;
+  } else {
+    return (x + 15) >> 4;
+  }
+}
+#+end_src
+
+* Problem 2.43
+#+begin_src c++
+M = 31
+N = 8
+#+end_src
+
+* Floating Point
+- float
+  |  s |   exp | frac |
+  |----+-------+------|
+  | 31 | 23-30 | 0-22 |
+- double
+  |  s |   exp |  frac |
+  |----+-------+-------|
+  | 63 | 52-62 | 0-51  |
