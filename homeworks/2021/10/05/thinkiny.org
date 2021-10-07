@@ -1,0 +1,30 @@
+* 2.4.4 Rounding
+ - Round-to-even 最接近的数字，如果是XX.5，则选择偶数，1.5和2.5都是2
+ - Round-toward-zero
+ - Round-down
+ - Round-up
+* Problem 2.50
+  - 10.111 => 11.0
+  - 11.010 => 11.0
+  - 11.000 => 11.0
+  - 10.110 => 11.0
+* 2.58
+#+begin_src c++
+bool is_little_endian() {
+  int a = 0x1234;
+  return *(char*)&a == 0x34;
+}
+#+end_src
+* 2.59
+#+begin_src c++
+(x & 0xff) | (y & ~0xff)
+#+end_src
+* 2.60
+#+begin_src c++
+unsigned replace_byte(unsigned x, int i, unsigned char b) {
+  if(i < 0 || i >= sizeof(x)) return x;
+  uint8 *p = (char*)&x;
+  *(p + (sizeof(x) - i - 1)) = b;
+  return x;
+}
+#+end_src
