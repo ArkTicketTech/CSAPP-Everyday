@@ -1,0 +1,25 @@
+Chapter2. Representing and Manipulating Information
+    2.0 modern computers use two-valued signals. Integer: overflow; float-number: precision.
+    2.1 information storage
+        2.1.1 Hexadecimal Notation
+            practice 2.1: 
+                A: 0x25B9D2 -> 10 0101 1011 1001 1101 0010
+                B: 1010 1110 0100 1001 -> 0xAE49
+                C: 0xA8B3D -> 1010 1000 1011 0011 1101
+                D: 11 0010 0010 1101 1001 0110 -> 0x322D96
+
+            practice 2.2: 
+                n = 5 = 1 + 4 * 1, i = 1, j = 1, 2^n = 32 = 0x20
+                n = 23 = 3 + 4 * 5, i = 3, j = 5, 2^n = 8388608 = 0x800000
+                ...
+
+            practice 2.3:
+                158 = 9 * 16 + 14 = 0x9E = 1001 1110
+                ...
+
+
+        2.1.2 data sizes
+            word size: 32-bit 4GB, 64-bit 16 exabytes. backward compatibility
+
+
+
