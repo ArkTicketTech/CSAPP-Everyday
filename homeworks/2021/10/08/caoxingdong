@@ -1,0 +1,7 @@
+2.1.3 Addressing and Byte Ordering
+    little endian:  least significant byte comes first
+    big endian: most significant byte comes first
+    In most applications, byte ordering is invisible. In some cases, it becomes an issue. 
+        binary data is communicated over networks between different computers. (code written for network applications must follow established conventions for byte ordering)
+        when inspecting machine-level programs, look at the bytes representation of an integer.
+        program are written to circumvent the type system. Use cast or union to change to data type in C (discouraged but useful). Print the bytes storing the integer/float one by one, we can find most machines use little endian.
