@@ -1,0 +1,23 @@
+* Ch. 3 Machine-Level Representation of Programs
+- 高级语言和低级语言
+  高级语言隐藏机器层面的实现细节，低级语言必须明确机器层面如何实现
+- 编译器可能的修改
+  改变程序执行顺序、去掉不必要的操作、用更快的操作替换较慢的操作、将递归改为循环
+- Intel 芯片
+  | 型号                 | 时间 | 元件数 |
+  |----------------------+------+--------|
+  | 8086                 | 1948 | 29K    |
+  | 80286                | 1982 | 134K   |
+  | i386                 | 1985 | 275K   |
+  | i486                 | 1989 | 1.2M   |
+  | Pentium              | 1993 | 3.1M   |
+  | Pentium Pro          | 1995 | 5.5M   |
+  | Pentium MMX          | 1997 | 4.5M   |
+  | Pentium II           | 1997 | 7M     |
+  | Pentium III          | 1999 | 8.2M   |
+  | Pentium 4            | 2000 | 42M    |
+  | Pentium 4E           | 2004 | 125M   |
+  | Core 2               | 2006 | 291M   |
+  | Core i7 Nehalem      | 2008 | 781M   |
+  | Core i7 Sandy Bridge | 2011 | 1.17G  |
+  | Core i7 Haswell      | 2013 | 1.4G   |
