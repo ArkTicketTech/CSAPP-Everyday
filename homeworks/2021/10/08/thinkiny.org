@@ -1,0 +1,41 @@
+* 2.61
+#+begin_quote
+A:  !!x
+B:  !!~x
+C:  !!(x & 0xff)
+D:  !!~(x & 0xff000000)
+#+end_quote
+
+* 2.62
+#+begin_src c++
+int int_shifts_are_arithmetic() {
+  int x = -2;
+  return !(x ^ (x >> 1));
+}
+#+end_src
+
+* 2.63
+#+begin_src c++
+unsigned srl(unsigned x, int k) {
+  unsigned xsra = (int)x >> k;
+  int w = sizeof(int) << 3;
+  int mask = (int) -1 << (w - k);
+  return xsra & ~mask;
+}
+
+int sra(int x, int k) {
+  int xsrl = (unsigned)x >> k;
+  int w = sizeof(int) << 3;
+  int mask = (int) -1 << (w - k);
+  int m = 1 << (w - 1);
+  mask &= ! (x & m) - 1;
+  return xsrl | mask;
+}
+#+end_src
+
+* 2.64
+#+begin_src c++
+int any_odd_one(unsigned x) {
+  return !!(x & 0xaaaaaaaa);
+}
+#+end_src
