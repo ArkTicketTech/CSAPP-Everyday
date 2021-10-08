@@ -1,4 +1,4 @@
-# CSAPP 10/5 Notes
+# CSAPP 10/7 Notes
 ## Chapter 2. Representing and Manipulating Information
 ### 2.1.3 Addressing and Byte Ordering
 * Objects are stored as a consecutive sequence of bytes, with the smallest address of the bytes used as its address.
