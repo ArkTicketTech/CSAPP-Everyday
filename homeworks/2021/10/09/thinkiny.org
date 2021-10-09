@@ -1,0 +1,51 @@
+* 2.65
+#+begin_src c++ :tangle "2_65.cpp"
+int odd_ones(unsigned x) {
+  x ^= x >> 16;
+  x ^= x >> 8;
+  x ^= x >> 4;
+  x ^= x >> 2;
+  x ^= x >> 1;
+  x &= 0x1;
+  return x;
+}
+#+end_src
+
+* 2.66
+#+begin_src c++
+int leftmost_one(unsigned x) {
+  x |= x >> 1;
+  x |= x >> 2;
+  x |= x >> 4;
+  x |= x >> 8;
+  x |= x >> 16;
+  return (x >> 1) + (x && 1);
+}
+#+end_src
+
+* 2.67
+#+begin_src c++
+int bad_int_size_is_32() {
+  int set_msb = 1 << 15;
+  set_msb <<= 15;
+  set_msb <<= 1;
+  int a = set_msb + set_msb;
+  return set_msb && !a;
+}
+#+end_src
+
+* 2.68
+#+begin_src c++
+int lower_one_mask(int n) {
+  int m = 1 << (n - 1);
+  return m | (m - 1);
+}c]
+#+end_src
+
+* 2.69
+#+begin_src c++
+unsigned rotate_left(unsigned x, int n) {
+  int w = sizeof(unsigned) << 3;
+  return x << n | x >> (w - n - 1) >> 1;
+}
+#+end_src
