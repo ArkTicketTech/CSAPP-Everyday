@@ -39,7 +39,7 @@ int bad_int_size_is_32() {
 int lower_one_mask(int n) {
   int m = 1 << (n - 1);
   return m | (m - 1);
-}c]
+}
 #+end_src
 
 * 2.69
