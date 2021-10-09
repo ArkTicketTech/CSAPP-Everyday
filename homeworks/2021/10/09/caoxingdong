@@ -1,0 +1,18 @@
+2.1.4 representing string
+    string in C: arrays of characters, ended with null.
+    some standard encoding, most common: ascii, null -> 0x00, independent with byte ordering and word size
+2.1.5 representing code
+    machine code: different, incompatible
+2.1.6 Boolean Algebra
+2.1.7 bit-level operations in c
+2.1.8 logical operations
+2.1.9 shift operations:
+    associate from left to right: x<<j<<k = (x<<j)<<k
+    two kinds of right shift:
+        logical: padding with 0
+        arithmetic: padding with the most significant bit
+        C doesn't define clearly which to use, Java: >> arithmetic, >>> logical
+2.2 integer presentation 
+    2.2.0 two different ways to encode integers: nonnegative, positive zero negative
+    2.2.1 integer data types
+        char short long, signed unsigned
