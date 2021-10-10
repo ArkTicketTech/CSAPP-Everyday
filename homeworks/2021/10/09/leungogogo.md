@@ -1,4 +1,4 @@
-# CSAPP 10/7 Notes
+# CSAPP 10/9 Notes
 ## Chapter 2. Representing and Manipulating Information
 ### 2.2 Integer Representations
 * In this chapter, we will introduce two ways to encode integers with bits:
