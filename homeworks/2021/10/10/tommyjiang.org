@@ -1,0 +1,23 @@
+* Ch. 3 Machine-Level Representation of Programs
+- C 语言 mul store 对应的汇编语言
+  #+begin_src asm
+  multstore:
+    pushq %rbx
+    movq %rdx, %rbx
+    call mult2
+    movq %rax, (%rbx)
+    popq %rbx
+    ret
+  #+end_src
+- Intel 数据类型和 C 语言数据类型的对应关系
+  | C 语言 | Intel 类型       | 汇编语言后缀 | 大小 |
+  |--------+------------------+--------------+------|
+  | char   | Byte             | b            |    1 |
+  | short  | Word             | w            |    2 |
+  | int    | Double word      | l            |    4 |
+  | long   | Quad word        | q            |    8 |
+  | char*  | Quad word        | q            |    8 |
+  | float  | Single precision | s            |    4 |
+  | double | Double precision | l            |    8 |
+  汇编语言命令后缀与数据类型有关，比如 movb, movw, movl, movq
+
