@@ -1,0 +1,30 @@
+* Ch. 3 Machine-Level Representation of Programs
+- CPU 寄存器
+  共有 16 个 64 位寄存器，包括
+  #+begin_src asm
+    %rax
+    %rbx
+    %rcx
+    %rdx
+    %rsi
+    %rdi
+    %rbp
+    %rsp
+    %r8-%r15
+  #+end_src
+  其中 %rsp 是栈寄存器，保存运行堆栈的最后一个位置
+- 操作数
+  1. 即时，即常量，用 $ + 整数或 Imm 表示
+  2. 寄存器，用 R[ra] 表示，可以是 8/4/2/1 字节
+  3. 内存，用 M[Addr] 表示
+
+  寻址方式经常组合使用，例如 Imm(rb, ri, s) 表示 Imm + R[rb] + R[ri] * s
+- 数据移动指令
+  #+begin_src asm
+  // MOV S, D 
+    movb s, d  // move byte
+    movw s, d  // move word
+    movl s, d  // move double word
+    movq s, d  // move quad word
+    movabsq s, d  // move absolute quad word
+  #+end_src
