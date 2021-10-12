@@ -1,0 +1,11 @@
+2.2.2 unsigned encodings B2U
+    binary to unsigned encodings: bijection
+2.2.3 two's complement encodings (binary to two's complement B2T):
+    most significant bit: sign bit with weight being -2^(w-1), bijection
+    alternative representation: one's complement (-2^(w-1)-1), sign magnitude
+2.2.4 conversion between signed and unsigned
+    keep the binary bit but change the interpretation: 
+        singed -12345 -> unsigned 53191 T2U(-12345) = 53191
+        unsigned 4294967295 -> signed -1 U2T(4294967295) = -1
+        T2U(x) = x(x>=0) or x + 2^w(x<0) = x + x_(w-1) * 2^w
+        U2T(x) = x(x<=Tmax) or x - 2^w(x>Tmax) = -x_(w-1) * 2^w + x
