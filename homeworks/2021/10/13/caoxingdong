@@ -1,0 +1,26 @@
+2.2.7 truncating numbers
+    truncating a  number will remove the first w-k bits, can alter the value, overflow
+    truncating an unsigned number: x' = x mod 2^k
+    Truncation of a two’s-complement number: x' = U2Tk(x mod 2k).
+
+2.3 integer arithmetic
+    Unsigned Addition
+        Unsigned Addition
+            x + y => (x + y) mod 2^w
+
+         Detecting overflow of unsigned addition
+            s < x or s < y
+
+        Unsigned negation
+            -x => 2^w - x
+
+
+    Two’s-complement addition
+        Two’s-complement addition
+            x + y => (x + y - 2^w) or (x + y) or (x + y + 2^w)
+
+        Detecting overflow in two’s-complement addition
+            x > 0 y > 0 s < 0 or x < 0 y < 0 s > 0 
+
+
+
