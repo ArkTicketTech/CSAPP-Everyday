@@ -1,0 +1,29 @@
+2.3.3 Two’s-Complement Negation
+    -x => (x, x=Tmin), -x
+
+2.3.4 Unsigned Multiplication
+    x * y => x * y % (2^w)
+
+2.3.5 Two’s-Complement Multiplication
+    x * y => U2T(x * y % 2^w)
+    unsigned and two's complement multiplication: bit-level equivalence
+
+2.3.6 Multiplying by Constants
+    Unsigned multiplication by a power of 2
+        x << k
+
+    Two’s-complement multiplication by a power of 2
+        x << k
+
+
+2.3.7 Dividing by Powers of 2
+    Unsigned division by a power of 2
+        x >> k
+
+    Unsigned division by a power of 2
+        x >> k or (x + (1<<k) - 1) >> k
+
+
+2.3.8 final thought
+    modular arithmetic
+

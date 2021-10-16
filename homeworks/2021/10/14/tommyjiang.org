@@ -1,0 +1,39 @@
+* Ch. 3 Machine-Level Representation of Programs
+- 数据移动指令
+  #+begin_src asm
+  // MOV S, D 
+    movb s, d  // move byte
+    movw s, d  // move word
+    movl s, d  // move double word
+    movq s, d  // move quad word
+    movabsq s, d  // move absolute quad word
+  #+end_src
+
+  #+begin_src asm
+  movl $0x4050, %eax  // immediate -> register, 4 bytes
+  movw %bp, %sp  // register -> register, 2 bytes  
+  movb (%rdi, %rcx), %al  // memory -> register, 1 byte
+  movb $-17, (%esp)  // immediate -> memory, 1 byte
+  movq %rax, -12(%rbp)  // registor -> memory, 8 bytes
+  #+end_src
+
+  move 分为 zero extending 和 sign extending，对应的指令为
+  - zero extending: movzbw/movzbl/movzwl/movzbq/movzwq
+  - sign extending: movsbw/movsbl/movswl/movsbq/movswq/movslq
+- 数据移动指令 C 语言和汇编语言
+  #+begin_src c
+  long exchange(long *xp, long y) {
+    long x = *xp;
+    *xp = y;
+    return x;
+  }
+  #+end_src
+
+  #+begin_src asm
+  // long exchange(long *xp, long y)
+  // xp in %rdi, y in %rsi
+  exchange:
+    movq (%rdi), %rax  // get x, set as return value
+    movq %rsi, (%rdi)  // store y at xp
+    ret                // return
+  #+end_src

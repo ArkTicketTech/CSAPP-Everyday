@@ -1,0 +1,19 @@
+* 3.4
+  - rax => return value
+  - rbx rbp r12 r13 r14 r15 => callee saved
+  - rdi rsi rdx rcx r8 r9 => argument
+  - rsp => stack pointer
+  - r10 => caller saved
+* 3.4.1
+  - problem 3.1
+     | operand        | value |
+     |----------------+-------|
+     | %rax           | 0x100 |
+     | 0x104          | 0x104 |
+     | $0x108         | 0x013 |
+     | (%rax)         |  0xFF |
+     | 4(%rax)        |  0xAB |
+     | 9(%rax,%rdx)   |  0x11 |
+     | 260(%rcx,%rdx) |  0x13 | 264 => 0x108
+     | 0xFC(,%rcx, 4) |  0xFF |
+     | (%rax,%rdx,4)  |  0x11 |
