@@ -1,0 +1,30 @@
+* Ch. 3 Machine-Level Representation of Programs
+- 堆栈操作
+  #+begin_src asm
+  subq $8, %rsp  // decrement stack pointer
+  movq %rbp, (%rsp)  // store %rbp on stack
+  #+end_src
+
+  #+begin_src asm
+  movq (%rsp), %rax  // read %rax from stack
+  addq $8, %rsp  // increment stack pointer
+  #+end_src
+- 数学和逻辑操作
+  | 指令      | 效果         | 描述                   |
+  |-----------+--------------+------------------------|
+  | leaq S, D | &S -> D      | load effective address |
+  | INC D     | D+1 -> D     | increment              |
+  | DEC D     | D-1 -> D     | decrement              |
+  | NEG D     | -D -> D      | negate                 |
+  | NOT D     | ~D -> D      | complement             |
+  | ADD S, D  | D+S -> D     | add                    |
+  | SUB S, D  | D-S -> D     | subtract               |
+  | IMUL S, D | D*S -> D     | multiply               |
+  | XOR S, D  | D^S -> D     | xor                    |
+  | OR S, D   | D or S -> D  | or                     |
+  | AND S, D  | D&S -> D     | and                    |
+  | SAL k, D  | D << k -> D  | left shift             |
+  | SHL k, D  | D << k -> D  | same as sal            |
+  | SAR k, D  | D >> Ak -> D | arithmetic right shift |
+  | SHR k, D  | D >> Lk -> D | logical right shift    |
+
