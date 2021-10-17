@@ -1,0 +1,33 @@
+* 3.4
+- move
+  | instruction | len |
+  |-------------+-----|
+  | movb        |   1 |
+  | movw        |   2 |
+  | movl        |   4 |
+  | movq        |   8 |
+- source
+  - $0x4050  immediate
+  - %bp...   register
+- move
+  - zero extend
+    - movzbw
+    - movzbl
+    - movzwl
+    - movzbq
+    - movzwq
+  - sign extend
+    - movsbw
+    - movsbl
+    - movsbl
+    - movsbq
+    - movswq
+    - movslq
+    - cltq
+- problem 3.2
+  - movl %eax, (%rsp)
+  - movw (%rax), %dx
+  - movb %0xFF, %bl
+  - movb (%rsp,%rdx,4), %dl
+  - movq (%rdx), %rax
+  - movw %dx, (%rax)
