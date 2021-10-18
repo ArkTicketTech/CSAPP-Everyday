@@ -1,0 +1,15 @@
+* Ch. 3 Machine-Level Representation of Programs
+- 特殊数学操作
+  | 指令    | 效果                                                           | 描述                   |
+  |---------+----------------------------------------------------------------+------------------------|
+  | imulq S | S * R[%rax] -> R[%rdx]:R[%rax]                                 | signed full multiply   |
+  | mulq S  | S * R[%rax] -> R[%rdx]:R[%rax]                                 | unsigned full multiply |
+  | cqto    | SignExtend(R[%rax]) -> R[%rdx]:R[%rax]                         | convert to oct word    |
+  | idivq S | R[%rdx]:R[%rax] mod S -> R[%rdx], R[%rdx]:R[%rax]/S -> R[%rax] | signed divide          |
+  | divq S  | R[%rdx]:R[%rax] mod S -> R[%rdx], R[%rdx]:R[%rax]/S -> R[%rax] | unsigned divide        |
+- 控制
+  - 标志位
+    - CF 进位 flag
+    - ZF 清零 flag
+    - SF 符号 flag
+    - OF 溢出 flag
