@@ -1,0 +1,40 @@
+* 3.4.3
+#+begin_src c++
+long exchange(long *exp, long y) {
+  long x = *xp;
+  *xp = y;
+  return x;
+}
+#+end_src
+
+#+begin_src asm
+exchange:
+    movq (%rdi), %rax
+    movq %rsi, (%rdi)
+    ret
+#+end_src
+
+* problem 3.4
+  | src_t         | dest_t        | Instruction         |
+  |---------------+---------------+---------------------|
+  | long          | long          | movq (%rdi), %rax   |
+  |               |               | movq %rax, (%rsi)   |
+  |---------------+---------------+---------------------|
+  | char          | int           | movsbl (%rdi), %eax |
+  |               |               | movl %eax, (%rsi)   |
+  |---------------+---------------+---------------------|
+  | char          | unsigned      | movsbl (%rdi), %eax |
+  |               |               | movl %eax, (%rsi)   |
+  |---------------+---------------+---------------------|
+  | unsigned char | long          | movzbl (%rdi), %eax |
+  |               |               | movq %rax, (%rsi)   |
+  |---------------+---------------+---------------------|
+  | int           | char          | movl (%rdi),%eax    |
+  |               |               | movb %al, (%rsi)    |
+  |---------------+---------------+---------------------|
+  | unsigned      | unsinged char | movl (%rdi), %eax   |
+  |               |               | movb %al, (%rsi)    |
+  |---------------+---------------+---------------------|
+  | char          | short         | movsbw (%rdi), %ax  |
+  |               |               | movw %ax, (%rsi)    |
+  |---------------+---------------+---------------------|
