@@ -1,0 +1,18 @@
+* Ch. 3 Machine-Level Representation of Programs
+- 控制
+  - 标志位
+    - CF 进位 flag
+    - ZF 清零 flag
+    - SF 符号 flag
+    - OF 溢出 flag
+  - 判断标志位指令
+    | 指令         | 效果    | 描述                |
+    |--------------+---------+---------------------|
+    | cmpb s1, s2  | s2 - s1 | compare byte        |
+    | cmpw s1, s2  | s2 - s1 | compare word        |
+    | cmpl s1, s2  | s2 - s1 | compare double word |
+    | cmpq s1, s2  | s2 - s1 | compare quad word   |
+    | testb s1, s2 | s1 & s2 | test byte           |
+    | testw s1, s2 | s1 & s2 | test word           |
+    | testl s1, s2 | s1 & s2 | test double word    |
+    | testq s1, s2 | s1 & s2 | test quad word      |
