@@ -1,0 +1,15 @@
+2.1.3 addressing and byte ordering
+0x01234567
+big endian: 01 23 45 67
+little endian: 67 45 23 01
+in most case, program compiled for either endian give identical class.
+in some case, byte ordering counts:
+1) binary data communicates by network. sending machine internal represantation --> network standard --> recieving machine internal represantation
+2) look at byte sequences representing integer data
+3) program written that circumvent the normal type system, such as cast or union.
+printf("%.2x", 255) --> FF
+
+2.1.4 representing strings
+representation of strings is independent of byte ordering and word size convention, so is more platform independent than binary data.
+
+circumvent 规避
