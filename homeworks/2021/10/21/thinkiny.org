@@ -1,0 +1,22 @@
+* 3.4.4
+  - stack growns downward
+  - pushq %rbp
+    - subq $8, %rsp
+    - movq %rbp, (%rsp)
+  - popq %rax
+    - movq (%rsp), %rax
+    - addq $8, %rsp
+* 3.5
+  - leaq S, D => D = &S
+  - SAL/SHL left shift
+  - SAR   arithmetic right thrift
+  - SHR   logical right shift
+* problem 3.6
+   | Source         | Result    |
+   |----------------+-----------|
+   | 9(%rdx)        | q+9       |
+   | (%rdx,%rbx)    | p+q       |
+   | (%rdx,%rbx,3)  | q+3*p     |
+   | 2(%rbx,%rbx,7) | 8*p+2     |
+   | 0xE(,%rdx,3)   | 3*q+14    |
+   | 6(%rbx,%rdx,7) | 7q+p+6    |
