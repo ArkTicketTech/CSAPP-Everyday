@@ -1,0 +1,16 @@
+* Ch. 3 Machine-Level Representation of Programs
+- 设置标志位
+  | 指令    | 效果                | 描述                         |
+  |---------+---------------------+------------------------------|
+  | sete D  | ZF -> D             | equal / zero                 |
+  | setne D | ~ZF -> D            | not equal / not zero         |
+  | sets D  | SF -> D             | negative                     |
+  | setns D | ~SF -> D            | non negative                 |
+  | setg D  | ~(SF^OF) & ~ZF -> D | greater (signed >)           |
+  | setge D | ~(SF^OF) -> D       | greater or equal (signed >=) |
+  | setl D  | SF^OF -> D          | less (signed <)              |
+  | setle D | (SF^OF) or ZF -> D  | less or equal (signed <=)    |
+  | seta D  | ~CF & ~ZF -> D      | above (unsigned >)           |
+  | setae D | ~CF -> D            | above or equal (unsigned >=) |
+  | setb D  | CF -> D             | below (unsigned <)           |
+  | setbe D | CF or ZF -> D       | below or equal (unsigned <=) |
