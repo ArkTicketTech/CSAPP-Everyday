@@ -1,0 +1,14 @@
+2.1.5 representing code
+binary code is seldom portable across different machine or system
+
+practice 2.13
+bool_or(x, y): result = bis(x, y);
+bool_xor(x, y): result = bic(x, y); ??暂时没想出来
+
+2.1.8
+短路/断路效应存在于&& ||, 而不存在于& |
+
+practice 2.15
+~(x ^ y) ?
+
+
