@@ -1,0 +1,19 @@
+* Ch. 3 Machine-Level Representation of Programs
+- 跳转指令
+  | 指令         | 同义指令 | 跳转条件       | 描述                        |
+  |--------------+----------+----------------+-----------------------------|
+  | jmp Label    | /        | 1              | direct jump                 |
+  | jmp *Operand | /        | 1              | indirect jump               |
+  | je Label     | jz       | ZF             | equal / zero                |
+  | jne Label    | jnz      | ~ZF            | not equal / not zero        |
+  | js Label     | /        | SF             | negative                    |
+  | jns Label    | /        | ~SF            | non negative                |
+  | jg Label     | jnle     | ~(SF^OF) & ~ZF | greater(signed >)           |
+  | jge Label    | jnl      | ~(SF^OF)       | greater or equal(signed >=) |
+  | jl Label     | jnge     | SF^OF          | less(signed <)              |
+  | jle Label    | jng      | (SF^OF) or ZF  | less or equal(signed <=)    |
+  | ja Label     | jnbe     | ~CF & ~ZF      | above(unsigned >)           |
+  | jae Label    | jnb      | ~CF            | above or equal(unsigned >=) |
+  | jb Label     | jnae     | CF             | below(unsigned <)           |
+  | jbe Label    | jna      | CF or ZF       | below or equal(unsigned <=) |
+
