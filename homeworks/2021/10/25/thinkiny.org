@@ -1,0 +1,18 @@
+* Problem 3.10
+#+begin_src c++
+short arith3(short x, short y, short z) {
+  short p1 = y | z;
+  short p2 = p1 >> 9;
+  short p3 = ~p2;
+  short p4 = y - p3;
+  return p4;
+}
+#+end_src
+* 3.5.5
+  - 128 bit => oct
+  - imulq, mulq, cqto, idivq, divq support 128bit [%rdx][%rax]
+* 3.6
+  - CF: Carry flag     t < a
+  - ZF: Zero flag      t == 0
+  - SF: Sign flag      t < 0
+  - OF: Overflow flag  (a < 0 == b < 0) && (t < 0 !== a< 0)
