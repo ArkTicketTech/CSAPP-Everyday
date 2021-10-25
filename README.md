@@ -31,24 +31,27 @@ Overview | Bits, Bytes, & Integers
 
 ## Members
 ### sickles
-bill0412
-Jamesleons
 moon548834
+HITTOM
+chunjieshawn
+tommyjiang
+jacoesad
+lih627
+thinkiny
+834930269
 wfnuser
 willhunger
+Jamesleons
+
+### left
+bill0412
 wtrience
-chunjieshawn
-HITTOM
 jianzhc
 leungogogo
-lih627
 lzbz
-thinkiny
-tommyjiang
 FHYN
 fltenwall
-jacoesad
-### left
+
 
 
 ## More
