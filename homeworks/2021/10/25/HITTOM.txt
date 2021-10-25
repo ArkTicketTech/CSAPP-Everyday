@@ -1,0 +1,10 @@
+2.1.9 Shift Operations in C
+i << j << k === (i << j) << k
+logical right shift: 1100 --> 0110
+arithmetic right shift: 1100 --> 1110(-4 --> -2)
+most compilers use arithmetic right shift for signed data, and many programmers assume this
+Java: x >> k(arithmetic), x >>> k(logic)
+a << k === a << (k mod w) on most machines, but is not guaranteed in c
+
+2.2 integer representations
+
