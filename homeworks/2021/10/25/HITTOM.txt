@@ -6,5 +6,3 @@ most compilers use arithmetic right shift for signed data, and many programmers 
 Java: x >> k(arithmetic), x >>> k(logic)
 a << k === a << (k mod w) on most machines, but is not guaranteed in c
 
-2.2 integer representations
-
