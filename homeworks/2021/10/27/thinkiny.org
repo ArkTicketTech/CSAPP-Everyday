@@ -1,0 +1,28 @@
+* 3.6.2
+| instruction | effect                 |
+|-------------+------------------------|
+| sete        | D <- ZF                |
+| setne       | D <- ~ZF               |
+| sets        | D <- SF                |
+| setns       | D <- ~SF               |
+| setg        | D <- ~(SF^OF) & ~ZF    |
+| setge       | D <- ~(SF^OF)          |
+| setl        | D <- SF^OF             |
+| setle       | D <- (SF ^OF) \vert ZF |
+| seta        | D <- ~CF & ~ZF         |
+| setae       | D <- CF                |
+| setb        | D <- CF                |
+| setbe       | D <- CF \vert ZF       |
+
+#+begin_src c++
+int comp(long a, long b) {
+  return a < b;
+}
+#+end_src
+
+#+begin_src asm
+cmpq %rsi, %rdi
+setl %al
+movzbl %al, %eax
+ret
+#+end_src
