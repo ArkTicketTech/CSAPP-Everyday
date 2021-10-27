@@ -1,0 +1,25 @@
+* Ch. 3 Machine-Level Representation of Programs
+- jmp 指令的汇编形式
+    #+begin_src asm
+    mov %rdi, %rax
+    jmp 8, <loop+0x8>  // machine code relative address
+    sar %rax
+    test %rax, %rax
+    jg 5 <loop+0x5>  // machine code relative address
+    repz retq  // repz = rep, retq = ret
+    #+end_src
+  - 条件控制示例
+    #+begin_src asm
+    absdiff:
+      cmpq %rsi, %rdi
+      jge .L2  // if >= then jump
+      addq $1, lt_cnt(%rip)
+      movq %rsi, %rax
+      subq %rdi, %rax
+      ret
+    .L2:
+      addq $1, ge_cnt(%rip)
+      movq %rdi, %rax
+      subq %rsi, %rax
+      ret
+    #+end_src
