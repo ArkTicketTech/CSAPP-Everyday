@@ -1,0 +1,34 @@
+* Ch. 3 Machine-Level Representation of Programs
+- 组合逻辑指令
+  #+begin_src c
+  void cond(short a, short *p) {
+    if (a && *p < a) *p = a;
+  }
+  #+end_src
+
+  #+begin_src asm
+  cond:
+    testq %rdi, %rdi  // jump condition 1
+    je .L1
+    cmpq %rsi, (%rdi)  // jump condition 2
+    jle .L1
+    movq %rdi, (%rsi)
+  .L1:
+    rep; ret
+  #+end_src
+- 条件移动指令
+  | 指令         | 同义指令 | 移动条件       | 描述                        |
+  |--------------+----------+----------------+-----------------------------|
+  | cmove S, R   | cmovz    | ZF             | equal /zero                 |
+  | cmovne S, R  | cmovnz   | ~ZF            | not equal / not zero        |
+  | cmovs S, R   |          | SF             | negative                    |
+  | cmovns, S, R |          | ~SF            | non negative                |
+  | cmovg S, R   | cmovnle  | ~(SF^OF) & ~ZF | greater(signed >)           |
+  | cmovge S, R  | cmovnl   | ~(SF^OF)       | greater or equal(signed >=) |
+  | cmovl S, R   | cmovnge  | SF^OF          | less(signed <)              |
+  | cmovle S, R  | cmovng   | (SF^OF) or ZF  | less or equal(signed <=)    |
+  | cmova S, R   | cmovnbe  | ~CF & ~ZF      | above(unsigned >)           |
+  | cmovae S, R  | cmovnb   | ~CF            | above or equal(unsigned >=) |
+  | cmovb S, R   | cmovnae  | CF             | below(unsigned <)           |
+  | cmovbe S, R  | cmovna   | CF or ZF       | below or equal(unsigned <=) |
+
