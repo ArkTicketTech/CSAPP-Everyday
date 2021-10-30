@@ -1,0 +1,23 @@
+* Ch. 3 Machine-Level Representation of Programs
+- 循环指令
+  - do while 循环示例
+    #+begin_src c
+    long fact_do(long n) {
+      long result = 1;
+      do {
+        result *= n;
+        n = n - 1;
+      } while (n > 1);
+      return result;
+    }
+    #+end_src
+
+    #+begin_src asm
+    fact_do:
+      movl $1, %eax  // set result = 1
+    .L2:
+      imulq %rdi, %rax  // result *= n
+      subq $1, %rdi  // n -= 1
+      cmpq $1, %rdi  // comapre n > 1
+      jg .L2  // if n > 1 goto L2
+      rep; ret
