@@ -1,0 +1,25 @@
+* Ch. 3 Machine-Level Representation of Programs
+- while 循环
+    #+begin_src c
+    long fact_do(long n) {
+      long result = 1;
+      while (n > 1) {
+        result *= n;
+        n = n - 1;
+      }
+      return result;
+    }
+    #+end_src
+
+    #+begin_src asm
+    fact_do:
+      movl $1, %eax  // set result = 1
+      jmp .L5
+    .L6:
+      imulq %rdi, %rax  // result *= n
+      subq $1, %rdi  // n -= 1
+    .L5:
+      cmpq $1, %rdi  // compare n & 1
+      jg .L6  // if n > 1 goto L6
+      rep; ret
+    #+end_src
