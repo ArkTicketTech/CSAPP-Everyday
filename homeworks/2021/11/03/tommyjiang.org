@@ -1,0 +1,7 @@
+* Ch. 3 Machine-Level Representation of Programs
+- switch 语句
+  C 语言直接列出 switch 的具体条件，转换为汇编语言时仍然采用 cmp + jmp 的形式，只不过有几个 switch 条件就要设置几个 jmp 的位置。
+- 运行时堆栈
+  调用其他程序时堆栈向低地址递增，同时移动 %rsp 指向栈顶，程序运行结束后恢复现场。
+- 控制转移
+  汇编程序中利用 call 指令调用其他程序，ret 返回。
