@@ -1,0 +1,14 @@
+2.2.6 expand numbers
+#define INT_MIN (-INT_MAX - 1) // right
+#define INT_MIN -2147483648 // wrong ?
+#define INT_MIN 0x80000000 // wrong ?
+short x = -1
+unsigned ux = x; // ux = (unsigned)(int)(x) = 0xFFFFFFFF, not (unsigned int)(unsigned short)x = 0x0000FFFF
+
+2.2.7 truncating numbers
+just so so
+
+2.2.8 
+other languages consider unsigned as more trouble than worth
+
+
