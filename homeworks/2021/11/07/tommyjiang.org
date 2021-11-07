@@ -1,0 +1,28 @@
+* Ch. 3 Machine-Level Representation of Programs
+- 数据传输
+  寄存器不够时，需要使用 stack 和 %rsp 配合进行数据传输。
+
+  #+begin_src c
+  long caller() {
+    long arg1 = 534;
+    long arg2 = 1057;
+    long sum = swap_add(&arg1, &arg2);
+    long diff = arg1 - arg2;
+    return sum * diff;
+  }
+  #+end_src
+
+  #+begin_src asm
+  caller:
+    subq $16, %rsp  // use stack
+    movq $534, (%rsp)
+    movq $1057, 8(%rsp)
+    leaq 8(%rsp), %rsi
+    movq %rsp, %rdi
+    call swap_add
+    movq (%rsp), %rdx
+    subq 8(%rsp), %rdx
+    imulq %rdx, %rax
+    addq %16, %rsp
+    ret
+  #+end_src
