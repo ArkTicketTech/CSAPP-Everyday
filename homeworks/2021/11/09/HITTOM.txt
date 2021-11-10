@@ -1,0 +1,9 @@
+2.3 Integer Arithmetic
+practice 2.27:
+int uadd_ok(int x, int y) { return x <= x + y; }
+practice 2.30:
+int tadd_ok(int x, int y) { return !(x < 0 && y < 0 && x + y >= 0 || x > 0 && y > 0 && x + y < 0); }
+-x == ~x + 1
+#define lowbit(x) x & -x
+
+2.3.5 //todo
