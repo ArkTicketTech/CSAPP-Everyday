@@ -41,4 +41,3 @@
     addq $32, %rsp
     ret
   #+end_src
-

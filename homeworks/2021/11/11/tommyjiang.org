@@ -1,0 +1,29 @@
+* Ch. 3 Machine-Level Representation of Programs
+调用其他函数时，当前函数的一些结果存在寄存器，必须保证这些寄存器中的结果没有被覆
+盖，一般结合栈寄存器实现
+
+#+begin_src c
+long P(long x, long y) {
+  long u = Q(y);
+  long v = Q(x);
+  return u + v;
+}
+#+end_src c
+
+#+begin_src asm
+P:
+  pushq %rbp
+  pushq %rbx
+  subq $8, %rsp  // 利用 stack
+  movq %rdi, %rbp 
+  movq %rsi, %rdi
+  call Q
+  movq %rax, %rbx
+  movq %rbp, %rdi
+  call Q
+  addq %rbx, %rax
+  addq $8, %rsp  // 还原 stack
+  popq %rbx
+  popq %rbp
+  ret
+#+end_src
