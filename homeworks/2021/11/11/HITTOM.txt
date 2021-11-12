@@ -1,0 +1,22 @@
+2.3.5 Two’s-Complement Multiplication
+bit-level equivalence of unsigned and 2-complement multiplication or addtion
+Practice 2.35
+int tmul_ok(int x, int y) { return !x || x == x * y / x; }
+
+2.3.6
+bit-level equivalence of unsigned and 2-complement by using right shift altering to multiply 2's power
+practice 2.38
+LEA: (a << k) + b
+m * a --> LEA, when m = (1 << k) + 1 or m = (1 << k) - 1
+practice 2.39
+(000)(11111)(000) --> (1 << n + 1) - (1 << m)
+when n == w - 1, just shift
+practice 2.40
+7 == (1 << 3) - 1
+30 == (1 << 1) + (1 << 2) + (1 << 3) + (1 << 4) == (1 << 5) - (1 << 1)
+28 == (1 << 5) - (1 << 2)
+55 == (1 << 6) - (1 << 3) - 1
+practice 2.41
+only n == m, form A; n == m + 1, A equals B; otherwise, form B better
+
+2.3.7 // todo
