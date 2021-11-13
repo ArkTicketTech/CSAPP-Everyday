@@ -1,0 +1,17 @@
+* Ch. 3 Machine-Level Representation of Programs
+数组元素可以用寄存器直接寻址方式访问。
+
+C 语言中的指针运算，对应底层汇编语言的寻址的 offset 操作。
+
+C 语言中的二维数组，寻址时同样用汇编语言转换。
+
+#+begin_src c
+int a[R][C];  // &a[i][j] = x_D + L(C * i + j)
+#+end_src
+
+#+begin_src asm
+src:
+  leaq (%rsi, %rsi, 2), %rax  // compute 3i
+  leaq (%rdi, %rax, 4), %rax  // compute x_a + 12i
+  movl (%rax, %rdx, 4), %eax  // read from M[x_a + 12i + 4]
+#+end_src
