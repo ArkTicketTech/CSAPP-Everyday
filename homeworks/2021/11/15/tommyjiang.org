@@ -1,0 +1,22 @@
+* Ch. 3 Machine-Level Representation of Programs
+- C 语言编译器对矩阵乘法的优化，直接用指针指向 A 矩阵的行和 B 矩阵的列，之后移动
+  指针。
+
+  #+begin_src asm
+  fix_prod:
+    salq $6, %rdx  // 64 * i
+    addq %rdx, %rdi  // Aptr = x_a + 64 * i
+    leaq (%rsi, %rcx, 4), %rcx  // Bptr = x_b + 4 * k
+    leaq 1024(%rcx), %rsi
+    movl $0, %eax
+  .L7:
+    movl (%rdi), %edx
+    imull (%rcx), %edx
+    addl %edx, %eax
+    addq $4, %rdi  // Aptr++
+    addq $64, %rcx  // Bptr++
+    cmpq %rsi, %rcx
+    jne .L7  // loop
+    rep;
+    ret
+  #+end_src
