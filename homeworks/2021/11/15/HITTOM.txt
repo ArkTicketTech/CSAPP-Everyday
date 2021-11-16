@@ -1,0 +1,13 @@
+2.3.7 Dividing by Powers of 2
+integer division always round to 0
+x / y == floor(1.0 * x / y)
+-x / y == ceil(-1.0 * x / y) -3 / 2 == -1
+x >> k == floor(1.0 * x / y)
+-x >> k == floor(-1.0 * x / y) -3 >> 1 == -2
+x / (1 << k) === (x < 0 ? x + (1 << k) - 1 : x) >> k
+practice 2.42
+x / 16 === x + (x >> 31) * 15 >> 4
+practice 2.43
+m = 31, n = 8
+
+2.3.8 Final Thoughts on Integer Arithmetic // TODO
