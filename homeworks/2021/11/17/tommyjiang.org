@@ -1,0 +1,24 @@
+* Ch. 3 Machine-Level Representation of Programs
+C 语言中的结构体，在内存中连续分配一段进行存储，汇编语言寻址访问元素。
+
+#+begin_src c
+struct rec {
+  int i;
+  int j;
+  int a[2];
+  int *p;
+}
+#+end_src
+
+#+begin_src asm
+movl (%rdi), %eax  // get rec -> i
+movl %eax, 4(%rdi)  // rec -> j = rec -> i
+  
+leaq 8(%rdi, %rsi, 4), %rax  // set %rax = rec -> a[i]
+
+movl 4(%rdi), %eax  // get rec -> j 
+addl (%rdi), %eax  // rec -> i + rec -> j
+cltq
+leaq 8(%rdi, %rax, 4), %rax  // rec -> a[rec -> i + rec -> j]
+movq %rax, 16(%rdi)  // store in rec -> p
+#+end_src
