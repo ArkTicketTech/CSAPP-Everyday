@@ -1,0 +1,18 @@
+2.3.8 Final Thoughts on Integer Arithmetic
+practice 2.44
+A. false x == INT_MIN
+B. true
+C. false x == 50000
+D. true
+E. false x == INT_MIN
+F. true
+G. true
+
+2.4 Floating Point
+2.4.2 IEEE Floating-Point Representation
+float 1 + 8 + 23
+double 1 + 11 + 52
+// TOOD
+case1:
+case2:
+case3:
