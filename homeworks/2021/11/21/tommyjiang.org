@@ -1,0 +1,11 @@
+* Ch. 3 Machine-Level Representation of Programs
+浮点数操作指令
+
+| 指令    | 源地址 | 目标地址 | 描述                 |
+|---------+--------+----------+----------------------|
+| vmovss  | M32    | X        | 移动单精度数         |
+| vmovss  | X      | M32      | 移动单精度数         |
+| vmovsd  | M64    | X        | 移动双精度数         |
+| vmovsd  | X      | M64      | 移动双精度数         |
+| vmovaps | X      | X        | 移动对齐打包单精度数 |
+| vmovapd | X      | X        | 移动对齐打包双精度数 |
