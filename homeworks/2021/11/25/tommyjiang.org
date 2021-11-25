@@ -1,0 +1,12 @@
+* Ch. 3 Machine-Level Representation of Programs
+浮点数运算指令
+
+| 单精度 | 双精度 | 效果             | 描述   |
+|--------+--------+------------------+--------|
+| vaddss | vaddsd | S1 + S2 -> D     | 加法   |
+| vsubss | vsubsd | S1 - S2 -> D     | 减法   |
+| vmulss | vmulsd | S1 * S2 -> D     | 乘法   |
+| vdivss | vdivsd | S1 / S2 -> D     | 除法   |
+| vmaxss | vmaxsd | max(S1, S2) -> D | 取大值 |
+| vminss | vminsd | min(S1, S2) -> D | 取小值 |
+| sqrtss | sqrtsd | sqrt(S) -> D     | 开方   |
