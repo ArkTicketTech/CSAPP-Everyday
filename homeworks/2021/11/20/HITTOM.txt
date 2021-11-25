@@ -1,0 +1,13 @@
+2.4.2 IEEE Floating-Point Representation
+case1: exponent not all 0 or 1, bias = 2 ** (k - 1) - 1, exp = -2 ** (k - 1) + 2 ~ 2 ** (k - 1) - 1, (1 + M) * 2 ** exp
+case2: exponent all 0, represent 0 or some value, exp = -2 ** (k - 1) + 1, M * 2 ** exp
+case3: exponent all 1, M == 0 ? infinite : NAN(not a number)
+
+2.4.3 Example Numbers
+practice 2.49：
+A. 2 ** (n + 2) - 1;
+B. 2 ** 25 - 1
+
+2.4.4 Rounding // TODO
+
+significand: 有效数
