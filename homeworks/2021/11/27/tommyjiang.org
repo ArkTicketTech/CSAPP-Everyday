@@ -1,0 +1,9 @@
+* Ch. 4 Processor Architecture
+Y86-64 架构
+- 可见的寄存器
+  %rax, %rcx, %rdx, %rbx, %rsp, %rbp, %rsi, %rdi, %r8 - %r14，都是 64-bit word
+  的寄存器
+- 指令
+  - movq 指令拆成四个不同的指令，irmovq/rrmovq/mrmovq/rmmovq，i 代表 immediate，
+    r 代表 register，m 代表 memory
+  - addq/subq/andq/xorq 只能操作寄存器数据
