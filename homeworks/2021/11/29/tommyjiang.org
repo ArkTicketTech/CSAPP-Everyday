@@ -1,0 +1,11 @@
+* Ch. 4 Processor Architecture
+Y86-64 架构
+- 指令
+  - cmovXX 指令，效果类似寄存器 move 指令，但只有条件满足时才会执行。
+  - halt 指令，停止指令执行。
+- 指令编码
+  - 每个指令编码为 1-10 字节。
+  - 初始字节，高 4 bit 为 code part，低 4 bit 为 function part。
+  - code part，operation 为 6X，condition 为 7X，move 为 2X。
+  - register %rax - %r14 对应 0-E，F 对应无寄存器。
+ 
