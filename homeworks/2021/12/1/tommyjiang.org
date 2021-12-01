@@ -1,0 +1,15 @@
+* Ch. 4 Processor Architecture
+- 异常
+  | 值 | 名称 | 含义     |
+  |----+------+----------|
+  |  1 | AOK  | 正常     |
+  |  2 | HLT  | hlt 指令 |
+  |  3 | ADR  | 非法地址 |
+  |  4 | INS  | 非法指令 |
+- 指令执行过程
+  - fetch 利用 PC 计数器从 memory 读入指令
+  - decode 解码指令
+  - execute 执行指令
+  - memory 向 memory 中写入数据
+  - write back 向 register file 中写入结果
+  - PC update 更新 PC 计数器，准备执行下一条指令
