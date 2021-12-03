@@ -1,0 +1,30 @@
+2.4.4 rounding
+1) round-to-nearest(round-to-even):
+why even: more near to average in most cases than simply down/up
+2) round-toward-zero
+3) round-down
+4) round-up
+
+practice 2.50
+A 11.0
+B 11.0
+C 11.0
+D 11.0
+
+2.4.5 Floating-Point Operations
+阿贝尔群: 交换律
+1314 + 0.521 == 0.521 + 1314
+不满足结合律
+3.14 + 1e10 - 1e10 != 3.14 + (1e10 - 1e10)
+
+2.4.6 Floating Point in C
+float to int: round to zero
+
+practice 2.54
+E. f == -(-f) true
+F. 1.0 / 2 == 1 / 2.0 true
+G. d * d >= 0.0 true
+
+
+anticipate: 预料
+peculiar: 奇特
