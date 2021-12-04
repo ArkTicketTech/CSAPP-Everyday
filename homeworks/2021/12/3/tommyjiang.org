@@ -1,0 +1,13 @@
+* Ch. 4 Processor Architecture
+不同指令在不同阶段执行情况的对比
+
+| 阶段          | OPq rA, rB                       | rrmovq rA, rB    | irmovq V, rB     |
+|---------------+----------------------------------+------------------+------------------|
+| Fetch/General | M1[PC] -> ifun M1[PC+1] -> rA:rB | 同左侧           | 同左侧           |
+| Fetch/valC    | /                                | /                | M8[PC+2] -> valC |
+| Fetch/valP    | PC + 2 -> valP                   | PC + 2 -> valP   | PC + 10 -> valP  |
+| Decode        | R[rA] -> valA R[rB] -> valB      | R[rA] -> valA    | /                |
+| Execute       | valB OP valA -> valE Set CC      | valA + 0 -> valE | valC + 0 -> valE |
+| Memory        | /                                | /                | /                |
+| Write back    | valE -> R[rB]                    | valE -> R[rB]    | valE -> R[rB]    |
+| PC update     | valP -> PC                       | valP -> PC       | valP -> PC       |
