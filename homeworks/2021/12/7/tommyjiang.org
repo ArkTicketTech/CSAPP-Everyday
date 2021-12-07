@@ -1,0 +1,12 @@
+* Ch. 4 Processor Architecture
+不同指令在不同阶段执行情况的对比
+
+| 阶段          | pushq rA                         | popq rA                       |
+|---------------+----------------------------------+-------------------------------|
+| Fetch/General | M1[PC] -> ifun M1[PC+1] -> rA:rB | 同左侧                        |
+| Fetch/valP    | PC + 2 -> valP                   | 同左侧                        |
+| Decode        | R[rA] -> valA R[%rsp] -> valB    | 同左侧                        |
+| Execute       | valB + (-8) -> valE              | valB + 8 -> valE              |
+| Memory        | valA -> M8[valE]                 | M8[valA] -> valM              |
+| Write back    | valE -> R[%rsp]                  | valE -> R[%rsp] valM -> R[rA] |
+| PC update     | valP -> PC                       | 同左侧                        |
