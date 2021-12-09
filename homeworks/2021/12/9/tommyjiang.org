@@ -1,0 +1,12 @@
+* Ch. 4 Processor Architecture
+不同指令在不同阶段执行情况的对比
+
+| 阶段          | jXX Dest                         | call Dest           | ret                             |
+|---------------+----------------------------------+---------------------+---------------------------------|
+| Fetch/General | M1[PC] -> ifun M1[PC+1] -> rA:rB | 同左侧              | 同左侧                          |
+| Fetch/valC    | M8[PC + 1] -> valC               | 同左侧              | /                               |
+| Decode        | /                                | R[%rsp] -> valB     | R[%rsp] -> valA R[%rsp] -> valB |
+| Execute       | Cond(CC, ifun) -> Cnd            | valB + (-8) -> valE | valB + 8 -> valE                |
+| Memory        | /                                | valP -> M8[valE]    | M8[valA] -> valM                |
+| Write back    | /                                | valE -> R[%rsp]     | valE -> R[%rsp]                 |
+| PC update     | Cnd ? valC : valP -> PC          | valC -> PC          | valM -> PC                      |
