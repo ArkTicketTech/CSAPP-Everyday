@@ -1,0 +1,25 @@
+* Ch. 4 Processor Architecture
+
+| 名称    | 取值 | 含义                       |
+|---------+------+----------------------------|
+| IHALT   |    0 | halt                       |
+| INOP    |    1 | nop                        |
+| IRRMOVQ |    2 | rrmovq                     |
+| IIRMOVQ |    3 | irmovq                     |
+| IRMMOVQ |    4 | rmmovq                     |
+| IMRMOVQ |    5 | mrmovq                     |
+| IOPL    |    6 | 整数操作指令               |
+| IJXX    |    7 | jump                       |
+| ICALL   |    8 | call                       |
+| IRET    |    9 | ret                        |
+| IPUSHQ  |    A | pushq                      |
+| IPOPQ   |    B | popq                       |
+| FNONE   |    0 | 默认函数码                 |
+| RESP    |    4 | %rsp 寄存器 id             |
+| RNONE   |    F | 无寄存器访问权限           |
+| ALUADD  |    0 | 相加 operation             |
+| SADK    |    1 | normal operation 状态码    |
+| SADR    |    2 | address exception 状态码   |
+| SADS    |    3 | illegal instruction 状态码 |
+| SHLT    |    4 | halt 状态码                |
+
