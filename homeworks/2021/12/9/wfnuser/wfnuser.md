@@ -46,3 +46,4 @@ linux> objdump -d mstore.o
 一些feature：
 The instruction encoding is designed so that commonly used instructions and those with fewer operands require a smaller number of bytes than do less common ones or ones with more operands.
 通过byte value标记指令
+
