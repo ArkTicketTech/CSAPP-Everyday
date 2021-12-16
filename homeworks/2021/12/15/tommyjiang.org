@@ -1,0 +1,12 @@
+* Ch. 4 Processor Architecture
+Y86-64 pipeline 实现
+
+- SEQ -> SEQ+ 计算阶段重排序
+  将 PC update stage 从最后挪到最前，利用寄存器存储信号值，在 PC update 时利用寄
+  存器的值计算当前 PC 值，技术上称为 circuit retiming
+- 加入 pipeline 寄存器
+  - F 预测 PC 寄存器值
+  - D fetch 和 decode 之间的值，存储最近的 decode 指令
+  - E decode 和 execute 之间，存储最近的 decode 指令和 register file 值
+  - M execute 和 memory 之间，存储最近的 execute 指令和跳转相关状态
+  - W memory 和 feedback 之间，返回需要 write 的值和 ret 时对应的 PC 值
