@@ -1,0 +1,9 @@
+* Ch. 4 Processor Architecture
+- pipeline 中 PC 的更新
+  - 指令为 jmp 或 call，直接用 valC 更新 PC
+  - 分支跳转指令，PC 的值在 valC 和 valP 中二选一，如果选错的话需要额外的处理
+  - 如果指令为 ret，PC 只有有限的候选值，都在 stack 上存储，此时需要等待
+    write-back 阶段结束再更新 PC 的值
+- pipeline 的风险
+  如果前后指令互相有依赖的话，例如后面的指令依赖前面指令计算的结果，此时
+  pipeline 会有问题，需要单独解决
