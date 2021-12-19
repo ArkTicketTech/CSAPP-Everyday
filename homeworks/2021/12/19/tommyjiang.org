@@ -1,0 +1,7 @@
+* Ch. 4 Processor Architecture
+- pipeline 的风险
+  如果前后指令互相有依赖的话，例如后面的指令依赖前面指令计算的结果，此时
+  pipeline 会有问题，需要单独解决，具体包括数据风险和控制风险
+  - 数据风险 当操作数再接下来的 3 个指令中被修改时会出现，因为还没有进行到 write
+    back stage，解决方法是利用 stalling，等待 3 个指令结束后再执行当前指令，或者
+    利用寄存器 E 提前存储需要 write back 的值
