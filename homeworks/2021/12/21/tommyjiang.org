@@ -3,3 +3,5 @@
   - 利用 forwarding 解决方法，与 stalling 不同，forwarding 不用等待 write stage
     结束，在 decode stage 阶段，直接将需要写入的值传给寄存器 E，这种直接将数据从
     一个 stage 传送到更早的 stage 的方法就是 data forwarding。
+  - forwarding 方法不能解决从 memory 中 load 数据的 hazard，需要使用 stall 方法
+    解决，称为 load interlock，解决 load 数据导致的 data hazard。
