@@ -1,0 +1,8 @@
+* Ch. 4 Processor Architecture
+- control hazard 的解决方法
+  如果 fetch stage 时 CPU 无法确认下一条指令的地址时，就会出现 control hazard，
+  一般是由跳转分支导致的，主要包括 ret 和 jump 指令两种情况。
+
+  对于 ret 指令而言，当 CPU 发现获取了错误的指令，可以通过插入 bubble 的方式，不
+  执行这些指令，从而避免程序错误。或者更简单的，也可以通过 stalling 的方式避免，
+  类似 data hazard 的解决方法。
