@@ -1,0 +1,12 @@
+* Ch. 4 Processor Architecture
+- exception 的处理
+  exception 分为程序执行导致的 internal exception 和由外部信号引起的中断
+  external exception。internal exception 可以分为以下三种：
+
+  1. halt 指令
+  2. invalid 指令
+  3. invalid 地址
+
+  pipeline 系统中，可能出现多个指令同时引发 exception，因为 CPU 会同时执行多个指
+  令，因此需要决定 exception 的处理顺序，最基础的方案是优先处理最靠前的指令，例
+  如 memory stage 的 exception 应该优先于 fetch stage 被处理。
