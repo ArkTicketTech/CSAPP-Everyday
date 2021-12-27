@@ -1,0 +1,9 @@
+* Ch. 4 Processor Architecture
+- exception 的处理
+  如果一个指令经过 fetch stage 已经开始执行，但之后 CPU 发现这是一个错误预测的指
+  令(分支跳转条件判断有误)，此时 decode stage 会遇到 invalid instruction
+  exception，此时 CPU 不会执行该指令，同时也应该避免抛出 exception。
+
+  第三种 exception 是由于 CPU pipeline 同时更新多个寄存器/内存的值，这样可能出现
+  某个 stage 的指令更改了某些值，会导致其他指令在执行时变为 invalid，需要保证抛出
+  exception 之后的指令不会更改系统中的值，防止出错。
