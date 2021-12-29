@@ -1,0 +1,8 @@
+* Ch. 4 Processor Architecture
+- Pipeline 控制逻辑
+  - load/use hazards: pipeline 必须 stall 一个周期保证能正确获取值
+  - ret 语句: pipeline 必须 stall，直到 ret 语句的 write-back stage
+  - mispredicted 分支：发现 mispredicted 时已经经历了几个 stage，相应的指令必须
+    被 cancel，同时需要从头开始 fetch 正确的指令
+  - exception: 发生 exception 之后，需要暂停指令的 update，直到发生 exception 的
+    指令执行到 write-back stage
