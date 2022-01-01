@@ -32,16 +32,16 @@ Overview | Bits, Bytes, & Integers
 ## Members
 ### sickles
 moon548834
-HITTOM
 chunjieshawn
 tommyjiang
 jacoesad
-lih627
-thinkiny
 834930269
 wfnuser
 willhunger
-Jamesleons
+tjwyz
+Rekind1e - Hy
+wanxingliu94 -lyx
+yurneroma
 
 ### left
 bill0412
@@ -51,8 +51,10 @@ leungogogo
 lzbz
 FHYN
 fltenwall
-
-
+Jamesleons
+thinkiny
+lih627
+HITTOM
 
 ## More
 如果本群感兴趣，也接受群规，请加群主微信并备注来意: constant_variation。谢谢！
