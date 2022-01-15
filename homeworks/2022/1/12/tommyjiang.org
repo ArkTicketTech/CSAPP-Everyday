@@ -1,0 +1,6 @@
+* Ch. 5 Optimizing Program Performance
+- 循环展开(loop unrolling)
+  循环展开可以减少循环变量的计算和循环条件的判断，为后续优化提供线索。
+
+  循环展开将原始循环中循环变量每次变化 1，改为每次变化 k，相当于减少了 k 倍的循
+  环计算和循环分支判断，可以有效减少 latency，将 latency 降至加法/乘法的下限。

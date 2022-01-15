@@ -1,0 +1,10 @@
+* Ch. 5 Optimizing Program Performance
+优化程序还需要了解 CPU 内部对指令的执行原理。
+
+#+begin_src asm
+addq %rax, %rdx  // 单条指令
+addq %rax, 8(%rdx)  // 多条指令，内存寻址和代数相加分拆计算
+#+end_src
+
+CPU 的各个执行单元，会分别进行不同类型的计算，例如整数/浮点数的加减，整数/浮点数
+的乘除，读写内存，分支跳转等，不同的执行单元负责的指令有区别。

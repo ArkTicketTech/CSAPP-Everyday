@@ -1,0 +1,8 @@
+* Ch. 5 Optimizing Program Performance
+- CPU 执行指令的时间指标
+  - latency 指令执行时间
+  - issue time 相同指令间隔的最小时钟数
+  - capacity 可以执行指令的计算单元数
+- 浮点数运算比整数运算需要的 latency 更多，加法和乘法的 issue time 都只有 1，因
+  为引入了 pipeline，但除法运算的 issue time 和 latency 相同，因为没有进行
+  pipeline 加速。
