@@ -1,0 +1,7 @@
+* Ch. 5 Optimizing Program Performance
+- 循环展开(loop unrolling)
+  将变量拆分的方式做 loop unrolling，在 unrolling factor k 较小的时候有效果，k
+  值继续增大 CPE 不会再继续减小，原因是 pipeline 设计中即使 k 值较大也无法再做加
+  速。
+
+  loop unrolling 可以由 compiler 自动完成，当然编译选项要开成 -O3 以上。
