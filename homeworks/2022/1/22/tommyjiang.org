@@ -1,0 +1,16 @@
+* Ch. 5 Optimizing Program Performance
+流水线设计在遇到条件预测错误时，会出现空等，影响程序执行效率，但不需要过于关注，
+latency 仍然是制约性能的主要因素。
+
+为了缓解条件预测错误影响性能，可以将根据条件赋值改为预先计算好需要的值，再分别进
+行赋值。
+
+#+begin_src cpp
+for (int i = 0; i < n; i++) {
+  long min = a[i] < b[i] ? a[i] : b[i];
+  long max = a[i] < b[i] ? b[i] : a[i];
+
+  a[i] = min;
+  b[i] = max;
+}
+#+end_src
