@@ -1,0 +1,8 @@
+* Ch. 5 Optimizing Program Performance
+对于规模较大的程序，需要利用 profiler 分析程序的瓶颈，针对性进行优化。
+
+* Ch.6 The Memory Hierarchy
+内存包括静态内存和动态内存，静态内存速度快，但价格更贵，一般用于 cache，一般的个
+人电脑只有几十 M 静态内存，但有几 G 以上的动态内存。
+
+内存一旦断电，储存的内容就会丢失，称为 volatile memory。
