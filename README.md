@@ -58,6 +58,7 @@ HITTOM
 
 ## More
 如果本群感兴趣，也接受群规，请加群主微信并备注来意: constant_variation。谢谢！
+![](https://github.com/wfnuser/wfnuser/raw/main/qr.jpeg)
 
 ## 广告区
 可以关注微扰君的[力扣账号](https://leetcode-cn.com/u/wfnuser/) 每天都会更新每日一题
