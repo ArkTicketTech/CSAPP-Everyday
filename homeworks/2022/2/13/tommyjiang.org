@@ -1,0 +1,5 @@
+* Ch. 6 The Memory Hierarchy
+内存地址共 m 位的计算机，一共有 2^m 个地址。其中 cache 包括 2^s 个 cache sets，
+每个 set 包括 E 个 cache line，每个 line 包括 2^b 的 data block。
+
+cache 可以表示为 (S, E, B, m) 的 tuple，cache 总容量为 S * E * B。
