@@ -1,0 +1,6 @@
+* Ch. 6 The Memory Hierarchy
+CPU 从内存读入数据时，先将地址发到 cache，如果 cache 中有该地址的数据，就直接传
+给 CPU，不需要从内存中读取。
+
+判断是否有该地址数据的方法，类似一个最简单的 hash 函数，利用 tag + set index +
+block offset 判断。
