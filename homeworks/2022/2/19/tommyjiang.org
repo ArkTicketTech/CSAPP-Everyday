@@ -1,0 +1,8 @@
+* Ch. 6 The Memory Hierarchy
+如果 cache 中没有需要提取的内容，会向下一个 level 存储索取内容，并将当前行的内容
+抹掉，存入新索取的内容。
+
+(S, E, B, m) 四元组定义了 cache 的构成形式。
+1. tag 和 index 定义了唯一的 memory block。
+2. 多个 block 对应同一个 cache set。
+3. 对应同一个 cache set 的 block 可以由 tag 唯一确定。
