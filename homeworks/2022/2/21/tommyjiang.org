@@ -1,0 +1,6 @@
+* Ch. 6 The Memory Hierarchy
+conflict miss 是指在 cache 中不断写入和抹去相同的变量，可以通过将写入的 byte 改
+为非 2 的整数次方避免。
+
+1 < E < C/B 的 cache 称为 E-way set associative cache，比 E=1 的情况要复杂，先考
+虑 E=C/B 的 case。
