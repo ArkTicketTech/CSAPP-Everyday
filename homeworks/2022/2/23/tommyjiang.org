@@ -1,0 +1,7 @@
+* Ch. 6 The Memory Hierarchy
+E=C/B cache 的查找过程
+
+1. set selection，和 direct-mapped cache 一致。
+2. line matching，和 direct-mapped cache 有区别，需要检查多个 line。如果命中，则
+   同样利用 offset 提取 word。
+3. 如果没有命中，利用 LFU policy 决定将哪个 line 的内容进行替换。
