@@ -1,0 +1,7 @@
+* Ch. 6 The Memory Hierarchy
+Fully associative cache 即 E=C/B 的 case。
+
+1. Set Selection，只有单个 set，直接选中。
+2. Line matching 和 word selection 也和 set associative cache 相同。
+
+如果 cache 中有要读入的内容，read 的过程是比较简单的。
