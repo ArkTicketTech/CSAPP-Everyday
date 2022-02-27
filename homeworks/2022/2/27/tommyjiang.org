@@ -1,0 +1,7 @@
+* Ch. 6 The Memory Hierarchy
+cache friendly 程序的特点
+1. 确保 common case 优化到运行最快。
+2. 减少内层循环 cache misses 的情况。重复进行 local variable 的 reference，
+   stride-1 reference，连续访问相邻的元素。二维数组遍历时先遍历第二维，再遍历第
+   一维。
+ 
