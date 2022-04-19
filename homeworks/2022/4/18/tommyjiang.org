@@ -1,0 +1,8 @@
+* Ch. 7 Linking
+main.c 先经过预处理器得到 main.i，再经过编译器得到 main.s，再经过汇编器得到
+main.o，sum.c 经过相同步骤得到 sum.o，链接器将两个 .o 文件 link 到一起。
+
+静态链接器 ld 将多个 object file 链接生成可执行文件，链接器主要完成以下两个任务：
+
+1. 符号解析。将符号 reference 与唯一的符号 definition 相绑定。
+2. 重定位。汇编文件 .o 地址均从 0 开始，需要重新定位不同文件中的符号地址。
