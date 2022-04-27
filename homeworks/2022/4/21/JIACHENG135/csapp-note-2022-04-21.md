@@ -13,7 +13,7 @@ date: 2022-04-19 20:41:53
 
 
 - 一些进制转换方式
-  ![2-1-dec-hex](assets/2-1-dec-hex.png.png)
+  ![2-1-dec-hex](assets/2-1-dec-hex.png)
 
   ![2-2-dec-with-hex](assets/2-2-dec-with-hex.png)
 

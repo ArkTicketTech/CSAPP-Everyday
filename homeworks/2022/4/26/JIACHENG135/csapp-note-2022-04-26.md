@@ -1,5 +1,5 @@
 ---
-title: csapp-note-2022-04-22
+title: csapp-note-2022-04-26
 tags:
   - csapp
   - 操作系统
@@ -7,7 +7,7 @@ tags:
   - CS基础知识
   - 读书笔记
 image: /images/csapp-note-2022-04-22.JPG
-date: 2022-04-20 20:15:35
+date: 2022-04-26 20:15:35
 ---
 Chapter 2 整数的表示
 
