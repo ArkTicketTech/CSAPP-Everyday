@@ -1,0 +1,12 @@
+* Ch. 7 Linking
+- 目标文件的类型
+  1. relocatable object file，可以与其他同类型文件结合，编译生成 executable
+     object file.
+  2. executable object file，可以直接装载到内存中执行的 object file.
+  3. shared object file，可以装载到内存，进行动态链接的 object file.
+
+1 和 3 由编译器生成，2 由链接器生成。
+
+- relocatable object file 的构成
+  ELF header 包括 16 字节，记录 word size 和 byte ordering，ELF 除 header 的其他
+  部分提供信息给链接器，以正常解读 object file.
