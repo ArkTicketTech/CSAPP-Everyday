@@ -1,0 +1,12 @@
+* Ch. 7 Linking
+- relocatable object file 的构成
+  - ~.text~ 程序机器码
+  - ~.rodata~ 只读数据
+  - ~.data~ 初始化的全局/静态 C 语言程序变量
+  - ~.bss~ 未初始化的全局/静态 C 语言程序变量
+  - ~.symtab~ 函数和全局变量的符号表
+  - ~.rel.text~ ~.text~ 中需要 linker 修改的地址
+  - ~.rel.data~ 与上一个类似
+  - ~.debug~ debugging 符号表
+  - ~.line~ 行数和 C 语言程序机器码的对应关系
+  - ~.strtab~ ~.symtab~ 和 ~.debug~ 的 string table
