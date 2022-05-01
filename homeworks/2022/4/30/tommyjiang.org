@@ -1,0 +1,7 @@
+* Ch. 7 Linking
+- symbol 的类型
+  1. Global symbol，在 module 中定义，会被其他 module 引用，对应 nonstatic。
+  2. Global symbol，在其他 module 定义，被 module 引用，对应 extern。
+  3. Local symbol，对应 static，现代 C++ 通常使用匿名命名空间实现。
+- ELF symbol table 的数据结构，linker 根据这些内容实现 link
+  name, type, binding, section, value, size
