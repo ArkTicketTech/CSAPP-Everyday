@@ -40,4 +40,4 @@ Q: 如何将一个整型数 $I$ 转成 IEEE 浮点数 $f$？
   - 否
   - 否
 
-![2-40-conversion-risk.png](assets/2-40-conversion-risk.png)
+  ![2-40-conversion-risk.png](assets/2-40-conversion-risk.png)
