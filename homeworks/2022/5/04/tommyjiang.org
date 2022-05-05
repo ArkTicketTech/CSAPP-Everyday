@@ -1,0 +1,8 @@
+* Ch. 7 Linking
+如果多个 module 都定义了相同的 global symbol，linker 必须选择其中一个作为 symbol
+的定义，将其他的舍掉。这个过程需要 compiler，assembler 和 linker 协作完成。
+
+同名 symbol 的处理规则：
+1. 不允许多个同名 strong symbol。
+2. 单个 strong symbol + 多个 weak symbol，选择 strong symbol。
+3. 多个 weak symbol，可以选择任意一个。

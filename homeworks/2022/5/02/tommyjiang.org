@@ -1,0 +1,7 @@
+* Ch. 7 Linking
+- 符号解析
+  linker 解析时，通过 symbol table 将 reference 与 symbol definition 绑定。
+
+  local symbol 的情况很简单，global symbol 情况比较复杂。如果 compiler 遇到未在
+  当前 module 中定义的 symbol，它会把它留给 linker 处理，如果 linker 也没有找到
+  对应的 definition，就会报错 undefined reference。
