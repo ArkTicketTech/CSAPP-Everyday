@@ -1,0 +1,6 @@
+* Ch. 7 Linking
+同名 symbol 的处理规则
+
+1. 如果有两个 ~main~ ，两个同名变量 ~x~ ， linker 会报错，因为两个都是 strong name。
+2. 如果两个同名变量其中一个未被初始化， linker 会选择另一个作为 definition。
+3. strong/weak symbol 混用，可能会出现诡异的运行时 bug，需要特别注意。
