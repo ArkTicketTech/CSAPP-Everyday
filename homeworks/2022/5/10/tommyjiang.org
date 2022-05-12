@@ -1,0 +1,9 @@
+* Ch. 7 Linking
+Linux 系统上，静态库的文件名是 archive，后缀为 .a。
+
+linker 发现一个 .o 文件引用另一个 .o 文件中的 symbol 时，会将被引用的 .o 文件拷
+贝到可执行文件中，如果 .o 文件没被引用，则不会进行拷贝。
+
+linker 按照从左到右的顺序依次处理文件，如果静态库在前，object file 在后，静态库
+文件中的 symbol 会覆盖 object file 中的 symbol，因此一般需要将静态库放在最后进行
+处理。
