@@ -1,0 +1,11 @@
+* Ch. 7 Linking
+重定位
+
+linker 完成符号解析后，就将代码中的所有 symbol 与其唯一的 definition 对应起来，
+就可以进行重定位了，具体包括以下两步：
+
+1. 重定位 sections 和 symbol definitions。
+2. 重定位 symbol definitions within sections。
+
+汇编器遇到 unknown location 对应的 reference 时，会生成一个 relocation entry，分
+别存在 .rel.text 和 .rel.data 文件中。
