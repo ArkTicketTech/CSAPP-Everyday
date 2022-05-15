@@ -1,0 +1,9 @@
+* Ch. 7 Linking
+可执行文件的结构与重定位 object file 的结构非常类似。
+
+1. 代码段，只读。
+2. 数据段，可读写。
+3. 符号表和 debug info。
+
+Linux 中可以利用命令行调用可执行文件，loader 将可执行文件读入，跳到第一个指令或
+entry point，这个过程称为装载。
