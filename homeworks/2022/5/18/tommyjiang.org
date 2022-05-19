@@ -1,0 +1,10 @@
+* Ch. 7 Linking
+running application dynamic linking
+
+position independent code
+
+多个进程可以共享同一个 shared library，代码编译后可以装载到内存的任意位置。 
+
+Global offset table (GOT) 记录所有 global data 的 entry。
+
+Linux linker 支持将代码中的 share library 函数调用替换成自己的函数版本。
