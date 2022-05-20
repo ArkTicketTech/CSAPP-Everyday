@@ -1,0 +1,10 @@
+* Ch. 7 Linking
+- 编译时替换
+  preprocessor 将对 target function 的调用，都替换成对用户自定义 function 的调用。
+- 链接时替换
+  linker 支持使用 --wrap f 参数，在解析 symbol 时，替换为用户自定义的版本。
+- 运行时替换
+  利用 dynamic linker 的 ~LD_PRELOAD~ 环境变量，程序运行时优先使用对应的动态链接
+  库。
+
+Linux 相关工具，ar/strings/strip/readelf/objdump
