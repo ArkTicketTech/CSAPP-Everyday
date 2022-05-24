@@ -1,0 +1,8 @@
+* Ch. 8 Exceptional Control Flow
+中断的响应通常由软硬件联合实现。
+
+每种类型的中断都有唯一对应的非负整数，一些中断类型是 CPU 厂商定义的，一些中断类
+型是操作系统内核定义的。
+
+系统启动时，会分配一个 jump table 作为 exception table，其中第 k 个地址存储的是
+类型 k 中断对应的 handler。
