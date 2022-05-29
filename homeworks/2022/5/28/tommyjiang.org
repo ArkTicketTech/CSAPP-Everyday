@@ -1,0 +1,12 @@
+* Ch. 8 Exceptional Control Flow
+硬件设备引起的 interruption 是异步的，其他类型的 interruption 是同步的，执行中断
+后返回的指令称作 faulting instruction。
+
+Traps 中断可以作为 user programs 和 system kernel 的接口，即 system call。
+
+Linux 系统的中断
+
+- divide error
+- general protection fault
+- page fault
+- machine check
