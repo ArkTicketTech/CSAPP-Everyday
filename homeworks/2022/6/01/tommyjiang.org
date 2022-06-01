@@ -1,0 +1,10 @@
+* Ch. 8 Exceptional Control Flow
+kernel 在不同进程间切换的工具是 context switch，kernel 会为每个进程维护一份
+context，kernel 会根据需求在不同进程间切换，即 scheduling。
+
+系统调用错误处理
+程序通常返回 -1，同时将 ~errno~ 变量置为 1。
+
+进程控制
+Unix 通过 C 语言可以控制进程，例如获取进程 ID，启动/终止进程，夺取子进程，休眠进
+程，装载/运行进程等。
