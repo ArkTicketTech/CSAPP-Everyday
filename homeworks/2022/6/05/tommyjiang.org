@@ -1,0 +1,10 @@
+* Ch. 8 Exceptional Control Flow
+signal 的发出和接收
+
+kernel 在检测到 system event 或进程调用 kill 时，会向进程发出 signal。
+进程在接收到 signal 时可以选择忽略，终止，或者捕获 signal。
+
+process group
+
+每个进程只属于唯一的 process group，有对应的 pgid，可以通过 setpgid 更改 process
+group。
