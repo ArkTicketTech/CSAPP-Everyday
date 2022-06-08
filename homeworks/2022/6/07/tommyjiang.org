@@ -1,0 +1,17 @@
+* Ch. 8 Exceptional Control Flow
+sending signal
+
+可以通过 ~kill~ 和 ~alarm~ 等函数发送信号。
+
+receiving signal
+
+接受信号后的默认行为
+1. 进程终止。
+2. 进程终止且崩溃。
+3. 进程暂停，直到重新收到 ~SIGCONT~ 信号。
+4. 进程忽略信号。
+
+signal function 可以通过 ~signum~ 改变行为
+1. handler 为 ~SIG_IGN~ 直接忽略
+2. handler 为 ~SIG_DFL~ 还原为默认行为
+3. handler 作为用户自定义函数的地址
