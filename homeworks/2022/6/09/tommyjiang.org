@@ -1,0 +1,12 @@
+* Ch. 8 Exceptional Control Flow
+blocking signals
+
+- implicit blocking
+  linux kernel 自动将重复发送给 handler 正在处理的 signal 屏蔽
+- explicit blocking
+  进程可以利用 ~sigprocmask~ 主动屏蔽 signal，可以设置 ~SIG_BLOCK~ ~SIG_UNBLOCK~
+  和 ~SIG_SETMASK~
+
+C 语言的 nonlocal jump
+可以从一个 function 直接跳到另一个正在执行的 function，不需要经过常规的
+call-and-return 过程。
