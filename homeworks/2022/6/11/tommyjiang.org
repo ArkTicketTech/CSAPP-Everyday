@@ -1,0 +1,8 @@
+* Ch. 8 Exceptional Control Flow
+Linux 操作进程的工具
+
+- STRACE 输出运行的程序及其子进程的所有系统调用
+- PS 列出目前系统正在运行的进程
+- TOP 输出当前进程占用的系统资源信息
+- PMAP 输出当前进程的内存 map 信息
+- proc 文本化输出 kernel data 的 ASCII text，可以由用户直接获得信息
