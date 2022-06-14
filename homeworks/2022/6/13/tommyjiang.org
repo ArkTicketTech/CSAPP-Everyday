@@ -1,0 +1,8 @@
+* Ch. 9 Virtual Memory
+为更有效地管理内存，现代操作系统支持虚拟内存(virtual memory)
+1. 将 main memory 看成 disk cache，只在需要的 main memory 之间传递 data。
+2. 每个进程都有独享的相同地址的 memory。
+3. 每个进程独享内存，不会被其他进程打扰。
+
+如果 virtual memory 使用不当，会导致程序出现 segmentation fault 或者 protection
+fault。
