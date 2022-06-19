@@ -3,7 +3,7 @@
   * 本课程只讨论 x86-64, 64位机器意味着地址是64bit
   * bool运算：and, or, not, xor
   * 位运算表示和操作集合
-  * ![image-20220620003405597](D:\Projects\CSAPP\CSAPP-Notes\homeworks\2022\6\20\jeemzz147\jeemzz147.assets\image-20220620003405597.png)
+  * ![image-20220620003405597](jeemzz147.assets/image-20220620003405597.png)
 
 * 逻辑移位和算术移位： 算术右移会填充符号位
 * 移位超过size 会取模 1 byte << 8 : 8 mod 8 = 0 
