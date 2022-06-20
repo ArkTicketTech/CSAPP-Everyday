@@ -1,0 +1,9 @@
+* Ch. 9 Virtual Memory
+分页表
+
+虚拟机需要了解某个 virtual page 是否已经在内存中被缓存。
+
+如果已被缓存，需要找到对应的内存地址，如果没被缓存，需要找到一个地址进行缓存。
+
+分页表由 PTE 组成，每个 PTE 都对应一个 virtual page，每个 PTE 包含一个 valid bit
+和 n 个 address bit，valid bit 表示是否已被缓存，address bit 对应相应的地址。
