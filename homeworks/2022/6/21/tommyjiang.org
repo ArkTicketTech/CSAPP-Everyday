@@ -1,0 +1,10 @@
+* Ch. 9 Virtual Memory
+内存页命中，valid bit 设置为 1
+
+内存页错误，即内存 cache miss，查找时发现目标地址未被 cache，会触发 page fault
+exception
+
+虚拟内存命中率不高的话，可能会拖累程序性能，但因为有 locality，程序在执行时一般
+只有很小一部分内存页处于活跃状态，不会出现大量的 miss。
+
+如果程序 locality 不好，就会出现内存页不断 swap in/out 的情况，称为 thrashing。
