@@ -1,0 +1,16 @@
+* Ch. 9 Virtual Memory
+缓存页命中过程
+
+1. CPU 将虚拟地址传给 MMU
+2. MMU 生成 PTE 地址，从缓存或主存中请求
+3. PTE 到达 MMU
+4. MMU 换算成物理地址，继续到缓存或主存中请求
+5. 缓存或主存将 data 传给 CPU
+
+page fault 过程
+
+1-3 和上面相同
+4. PTE valid bit 为 0，MMU 抛出异常，system kernel 获得控制权
+5. kernel 找到对应的 victim page 
+6. kernel pages in，同时更新 PTE
+7. 回到原来的进程
