@@ -1,0 +1,11 @@
+* Ch. 9 Virtual Memory
+物理 cache 可以与 virtual memory 联合使用，在 cache lookup 之前先做 address
+translation 即可。
+
+virtual address 和 physical address 的转换需要利用 PTE，为了提高速度，可以将 PTE
+做 cache，称为 TLB(translation lookaside buffer)
+
+TLB 每行都是一个 PTE，在 virtual address 进行 cache，利用 index 和 tag 进行快速
+查找。
+
+如果出现 TLB miss，MMU 必须从 L1 cache 中读取 PTE
