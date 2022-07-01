@@ -1,0 +1,15 @@
+* Ch. 9 Virtual Memory
+Linux page fault exception handling
+
+1. virtual address legal?
+
+   如果 instruction not legal，触发 segmentation fault
+
+2. attempted memory access legal?
+   
+   进程是否有读写 page 的权限，如果没有权限，触发 protection exception，同时终止
+   进程
+
+3. default
+
+   选择 victim page，swapping out，swapping in new page，更新 PTE
