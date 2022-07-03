@@ -1,0 +1,13 @@
+* Ch. 9 Virtual Memory
+memory mapping
+
+Linux 将 virtual memory 与 disk object 进行 mapping
+
+1. regular file 被分成 page-size pieces，CPU 访问前，这些内容不会被放进物理内存，
+   只有访问时才会 swap in。
+
+2. anonymous file 被映射为全零，CPU 访问时，在物理内存中找到一个 victim page，
+   swap out，将其覆盖为全零。
+
+object 可以被映射为 shared object，此时该区域的改变对所有进程可见，其他进程会将
+shared object 映射到自己的虚拟内存。
