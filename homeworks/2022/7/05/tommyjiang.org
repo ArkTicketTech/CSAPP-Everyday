@@ -1,0 +1,10 @@
+* Ch. 9 Virtual Memory
+multi level page tables
+
+32 位系统，4 KB page，4-byte PTE，如果用单一 PTE 的话，会占用 4MB 内存。
+
+一个解决方法是采用多级 PTE，level 1 PTE 指向 level 2 PTE，level 2 PTE 指向
+virtual memory，如果 virtual memory 未被使用，则 level 1/2 PTE 均为空。
+
+如果 level 1 PTE 为空，其对应的 level 2 PTE 为空，因此可以节省很大的空间，因为系
+统运行时未分配的内存是大多数。根据二八原则，真正需要 cache 的 PTE 其实很少。
