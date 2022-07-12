@@ -1,0 +1,8 @@
+* Ch. 9 Virtual Memory
+C 语言中的 ~malloc~ 函数，返回一个指向内存的指针，保证内存至少有 ~size~ 参数大小
+的空间。如果申请内存空间大于可用内存，会返回空指针，同时将 ~errno~ 位置 1。
+
+~calloc~ 将分配的内存置 0。想重新申请内存用 ~realloc~ 函数。
+
+~free~ 函数用于释放内存，参数是 void *ptr，必须指向 ~malloc~ ~calloc~ ~realloc~
+分配内存的首地址，否则行为未定义，会导致 bug。
