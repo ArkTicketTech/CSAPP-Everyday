@@ -1,0 +1,11 @@
+* Ch. 9 Virtual Memory
+Fragmentation
+
+如果 heap 内存分配得不好，会导致 fragmentation，具体地说，包括 internal
+fragmentation 和 external fragmentation。
+
+internal fragmentation 是指 allocated block 大于 payload，通过计算 allocated
+blocks 的 size 和 payload 的差异，就能得到 internal fragments。
+
+external fragmentation 是指没有足够大的 single free block 满足内存分配请求，因此
+需要尽可能维护少量大块连续内存，避免出现大量小块连续内存。
