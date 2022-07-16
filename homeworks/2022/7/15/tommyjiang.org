@@ -1,0 +1,8 @@
+* Ch. 9 Virtual Memory
+优秀的 allocator 需要考虑 free block organization/placement/splitting/coalescing.
+
+需要维护 allocated 和 free blocks 的边界，采用如下数据结构，one-word header，pay
+load，padding。利用这个结构可以维护一个 heap，即 implicit free list，这个数据结
+构非常简单，但操作需要 O(n) 时间的复杂度。
+
+即使对于 one-byte 的请求，也会分配最小单元例如 two-words 的内存。
