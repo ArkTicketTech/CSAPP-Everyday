@@ -1,0 +1,11 @@
+* Ch. 9 Virtual Memory
+如何寻找可用内存
+
+1. first fit，每次从头寻找，直到找到满足条件的 block。
+2. next fit，每次从上一次分配位置寻找，直到找到满足条件的 block。
+3. best fit，遍历找到所有可用内存中满足条件的最小 block。
+
+合并 free blocks
+
+利用 boundary tags 可以在常数时间实现当前 block 与 previous block 的合并。在每个
+block 的最后加入 footer，与当前 block 的 header 相同。
