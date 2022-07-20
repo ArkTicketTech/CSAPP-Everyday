@@ -1,0 +1,9 @@
+* Ch. 9 Virtual Memory
+不再需要用到的内存应该被及时 ~free~ ，否则会出现内存泄漏。
+
+garbage collector 负责将不再被用到的内存及时 free，这样就不再需要手动 ~free~
+
+garbage collector 将内存看作有向图，图中的节点分为 root node 和 heap node，节点
+p 称为 reachable 如果从任意 root node 出发存在一条直接边指向 p。
+
+garbage collector 的任务是将 unreachable node 及时 free，使它们重新变为可用。
