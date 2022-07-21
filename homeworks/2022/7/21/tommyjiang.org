@@ -1,0 +1,16 @@
+* Ch. 9 Virtual Memory
+mark & sweep garbage collectors
+
+- mark phase
+
+  标记所有从 root 节点 reachable 和 allocated 的节点
+  
+- sweep phase
+
+  free 所有 unmarked 节点
+
+内存相关 bug
+
+1. 解无效指针，需要确保指针指向的是有效内存。
+2. 读未初始化的内存，认为 heap memory 已经初始化为 0，但其实其并未初始化。
+3. stack buffer 溢出，写入 stack 的内容超出 target buffer 的 size。
