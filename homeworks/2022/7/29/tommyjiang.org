@@ -1,0 +1,16 @@
+* Ch. 10 System-Level I/O
+打开文件
+
+Linux 进程打开文件的方式包括三种，0 standard input/1 standard output/2 standard error。
+
+调整文件位置
+
+默认位置为文件初始位置 + 1 byte offset，可以利用 ~seek~ 函数移动文件位置。
+
+读/写文件
+
+读入是从当前位置读入 n 个 byte，或者直到遇到 EOF，写入于此类似
+
+关闭文件
+
+释放文件操作相关资源
