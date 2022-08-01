@@ -1,0 +1,13 @@
+* Ch. 10 System-Level I/O
+文件类型
+
+text file 文本文件，只包含 ASCII 和 Unicode 字符。
+
+binary file 二进制文件，除 text file 以外的其他文件。
+
+socket 用于网络传输的文件。
+
+文件 metadata
+
+利用 ~stat~ 或 ~fstat~ 命令读取，包括是否为 regular file，是否为 directory file，
+是否为 network socket。
