@@ -1,0 +1,17 @@
+* Ch. 10 System-Level I/O
+I/O 重定向
+
+将 standard input/output 重定向至指定的文件。
+
+C 语言 standard I/O 库
+
+- ~fopen~ ~fclose~
+- ~fread~ ~fwrite~
+- ~fgets~ ~fputs~
+- ~scanf~ ~printf~
+
+读写函数
+
+Unix I/O Standard I/O RIO I/O
+
+RIO I/O 主要用于网络 socket 通信
