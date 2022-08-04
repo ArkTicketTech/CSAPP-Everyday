@@ -1,0 +1,16 @@
+* Ch. 11 Network Programming
+client-server model
+
+server 管理 resource，提供 service 供 client 使用 resource。
+
+transaction
+
+1. client 需要 service 时，向 server 发送 request。
+2. server 根据收到的 request 处理资源。
+3. server 向 client 发送 response。
+4. client 收到 response，进行相应处理。
+
+network
+
+对于 Unix 而言，network 和其他 I/O 设备类似，统一进行建模。
+
