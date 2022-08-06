@@ -1,0 +1,5 @@
+Network
+
+最底层是 LAN，最流行的 LAN 是以太网(Ethernet)，传输速度从 3Mb/s 升级为 10Gb/s。
+
+以太网的 adapter 都有全局唯一的 48-bit 地址，host 可以向其他 host 发送字节数据，称为 frame，每个 frame 有固定的 header 鉴别源地址和目的地址，以及 payload。所有 host 都能看到 frame，但只有目的地址会实际读取它。
