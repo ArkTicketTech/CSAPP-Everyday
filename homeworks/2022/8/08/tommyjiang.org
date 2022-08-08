@@ -1,0 +1,9 @@
+* Ch. 11 Network Programming
+多个 Ethernet 可以连成更大的 LAN，称为 bridged Ethernet，桥接以太网，桥接比 hub
+更能发挥带宽。
+
+LAN 之间可以通过路由器相连，形成 WAN。
+
+IP 地址，之前是 32 位 IPv4，现在 64 位 IPv6。IP 地址不好记，可以使用 domain
+names，例如 com/edu/gov/org/net 等等。将 domain name 转成 IP 地址的服务器称为域
+名解析服务器 DNS，domain name system。
