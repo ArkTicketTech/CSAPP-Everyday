@@ -1,0 +1,15 @@
+* Ch. 11 Network Programming
+~nslookup~ 利用 DNS 查找 domain name 所对应的 IP
+
+socket 连接
+
+(client address: client port, server address: server client)
+
+client socket 接口
+
+get address -> socket -> connect -> rio_written -> rio_readlineb -> close
+
+server socket 接口
+
+get address -> socket -> bind -> listen -> accept -> rio_readlineb ->
+rio_written -> rio_readlineb -> close
