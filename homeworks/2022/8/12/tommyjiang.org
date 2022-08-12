@@ -1,0 +1,9 @@
+* Ch. 11 Network Programming
+Web server
+
+使用协议为 HTTP hypertext markup language，超文本传输协议，web client 即浏览器
+
+web server 向 web client 提供内容的两种方式
+
+1. 将 disk file 内容传给 client
+2. 将可执行文件输出结果传给 client
