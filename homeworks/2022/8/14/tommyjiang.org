@@ -1,0 +1,11 @@
+* Ch. 11 Network Programming
+URL 对应的是静态还是动态文件没有统一的规则，由服务器自己制定对应的规则。
+
+~/~ 并不表示根目录，而是 request 内容的 home 目录，或由服务器指定的对应目录。
+
+HTTP request
+
+包括 request line，零个或多个 request headers，以及一个空行。
+
+request line 形式为 method URI version，method 包括
+get/post/options/head/put/delete/trace 等。
