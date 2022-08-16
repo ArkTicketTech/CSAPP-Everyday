@@ -1,0 +1,12 @@
+* Ch. 11 Network Programming
+HTTP 状态码
+
+| 状态码 | 对应信息              | 描述                         |
+|--------+-----------------------+------------------------------|
+|    200 | OK                    | 请求正常处理                 |
+|    301 | Moved permanently     | 请求的内容已经移动到其他位置 |
+|    400 | Bad request           | 服务器无法理解请求           |
+|    403 | Forbidden             | 服务器没有权限获取请求的文件 |
+|    404 | Not found             | 服务器无法找到请求的文件     |
+|    501 | Not implemented       | 服务器不支持请求类型         |
+|    505 | version not supported | 服务器不支持请求版本         |
