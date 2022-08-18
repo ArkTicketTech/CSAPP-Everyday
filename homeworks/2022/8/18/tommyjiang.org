@@ -1,0 +1,17 @@
+* Ch. 11 Network Programming
+动态内容的提供，利用 CGI common gateway interface
+
+Argument 通过 URI 中的 & 进行传递
+
+子进程可以通过 ~genenv~ 拿到返回的参数，同时 server 也可以发送其他一些预定义的信
+息
+
+| 环境变量       | 描述       |
+|----------------+------------|
+| QUERY_STRING   | 程序参数   |
+| SERVER_PORT    | 端口       |
+| REQUEST_METHOD | GET / POST |
+| REMOTE_HOST    | 域名       |
+| REMOTE_ADDR    | IP 地址    |
+| CONTENT_TYPE   | MIME 类型  |
+| CONTENT_LENGTH | 字节数     |
