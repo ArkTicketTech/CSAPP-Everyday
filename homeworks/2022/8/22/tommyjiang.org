@@ -1,0 +1,8 @@
+* Ch. 12 Concurrent Programming
+最简单的并发程序就是使用进程以及 ~fork~ ~exec~ ~waitpid~ 等 Linux 系统函数。
+
+利用进程实现并发 server
+
+1. ~SIGCHILD~ handler 同时 reap 多个 zombie children
+2. parent 和 child 都需要 close ~connfd~ 防止内存泄漏
+3. child 会始终保持连接，直到 parent 和 child 的 ~connfd~ 都被 close
