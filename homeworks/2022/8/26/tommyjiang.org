@@ -1,0 +1,7 @@
+* Ch. 12 Concurrent Programming
+多线程执行的方式和多进程类似，首先有一个主线程 main thread，主线程可以创建其他线
+程 peer thread，利用 context switch，可以在 main thread 和 peer thread 之间切换
+运行，提高并行处理速度。
+
+线程间的 context switch 速度要比进程间切换更快，主进程和 peer thread 之间是严格
+的 parent child 关系，同时不同线程可以读取共享的 data，而不同进程则无法实现。
