@@ -1,0 +1,9 @@
+* Ch 12. Concurrent Programming with Threads
+
+- Posix Threads
+  操作 C 程序线程的标准接口 Pthreads，1995 年诞生，在所有 Linux 系统中都能使用，提供了 create/kill/reap thread 的函数接口。
+ 
+  - 创建 thread
+    ~pthread_create~ 函数，创建 thread，执行 thread routine，参数为 arg。
+  - 终止 thread
+    ~pthread_exit~ 函数，如果顶层 thread return，底层 thread 自动终止，也可以调用该函数显式终止，如果是 main thread 调用，会等待其他子进程终止后再终止。
