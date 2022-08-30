@@ -1,0 +1,9 @@
+* Ch. 12 Concurrent Programming
+- 等待其他进程结束， ~pthread_join~ 函数，可以指定具体等待的进程
+- 取消进程控制， ~pthread_detach~ 函数，detach 后该进程不能再被其他进程 reap 或
+  kill，系统会自动释放其使用的资源
+- 初始化进程， ~pthread_init~ 函数，初始化 ~PTHREAD_ONCE_INIT~ 标志位，需要多进
+  程共享变量时非常有用
+
+线程间共享进程的 virtual address space，包括只读数据/代码，可读写数据，堆，以及
+其他 shared library code 和 data
