@@ -1,0 +1,12 @@
+* Ch. 12 Concurrent Programming
+C 语言中的变量
+
+全局变量
+在所有 function 外声明的变量为全局变量，所有线程共享同一个 instance
+
+局部自动变量
+函数内声明的变量，没有用关键字 static，每个进程都拥有一个独立的与该变量对应的
+instance
+
+局部静态变量
+函数内用关键字 static 声明的变量，与全局变量类似，所有线程共享同一个 instance
