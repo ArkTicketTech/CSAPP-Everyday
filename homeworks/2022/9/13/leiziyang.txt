@@ -1,0 +1,6 @@
+little endian 小端序：the least significant comes first 
+big endian 大端序：the most significant comes first
+Intel的机器是小端序 Android和iOS只能在小端模式下运行
+为避免大小端序机器之间的信息传输给字节排序带来混乱，为网络应用程序编写的代码必须遵循发送机->网络标准->接收机的转换模式
+二进制代码很少可以在机器和操作系统的不同组合中进行可移植。
+
