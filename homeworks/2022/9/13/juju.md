@@ -1,5 +1,6 @@
 ## 11.4.8 实验
 
+```
 /**
 open_clientfd 函数建立与服务端的连接，返回一个连接描述符
 **/
@@ -43,3 +44,4 @@ int open_clientfd(char *hostname, char *port)
  
 
 }
+```
