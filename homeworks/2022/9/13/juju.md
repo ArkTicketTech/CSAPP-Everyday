@@ -5,8 +5,6 @@
 open_clientfd 函数建立与服务端的连接，返回一个连接描述符
 **/
 
-#include "csapp.h"
-
 
 int open_clientfd(char *hostname, char *port)
 {
@@ -17,7 +15,7 @@ int open_clientfd(char *hostname, char *port)
  memset(&hints, 0, sizeof(struct addrinfo));
  
  hints.ai_socktype = SOCK_STREAM;               //打开一个连接
- hints.ai_flags    = AI_NUMERICSERV;            //使用数字端口
+ hints.ai_flags    = AI_NUMERICSERV;            //端口
  hints.ai_flags   != AI_ADDRCONFIG;             //
  
  
