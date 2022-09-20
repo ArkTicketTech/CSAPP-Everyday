@@ -1,0 +1,16 @@
+MOV类指令由4条指令构成
+- movb 8位
+- movw 16位
+- movl 32位
+- movq 64位
+从源到目标有五种可能的类型组合
+Immediate - Register
+Register - Register
+Memory - Register
+Immediate - Memory
+Register - Memory
+整数寄存器
+%rax 64位
+%eax 32位
+%ax 16位
+%al 8位
