@@ -1,0 +1,6 @@
+机器代码提供了两种实现条件行为的基本低级机制：它测试数据值，然后根据这些测试的结果改变控制流或数据流。
+CF carry flag 用于检测未带符号操作的溢出
+ZF zero flag 最近的一次操作得到的结果为零
+SF sign flag 最近的一次操作产生了一个负值
+OF overflow flag 最近的一次操作导致了two's-complement overflow，无论是负的还是正
+
