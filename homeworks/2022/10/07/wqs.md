@@ -22,6 +22,6 @@ x86-64的栈向**低地址**方向增长。%RSP指向栈顶，减少栈指针可
 
 x86-64需要的存储空间超出了寄存器能存放的大小时，会分配栈空间，即栈帧。如下图。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/93555a3d-40f1-4f17-a1fd-48099b2ba961/Untitled.png)
+![image](https://user-images.githubusercontent.com/80054116/194714227-e53ddf62-42b8-4de8-b033-d3dc73242fde.png)
 
 栈：传递参数、存储返回信息、保存寄存器、局部存储。为了提高效率，x86-64只分配所需栈帧。许多过程有6个或更少的参数，所有参数都可通过寄存器传递。
