@@ -1,4 +1,6 @@
 ### Aside: RISC and CISC instruction sets
+CISC出现的更早。微处理器出现在70s,随着处理器技术的发展，到80s的时候，指令集已经很庞大了。x86沿着这条路径发展出了IA32和x86-64。
+RISC在80s由IBM率先提出，之后由 Professors David Patterson, of the University of California at Berkeley, and John Hennessy, of Stanford University 两位发扬光大。
 
 80s, RISC 和 CISC 产生了巨大的争论。 
 RISC 阵营认为，通过流水线的指令集设计、处理器实现和高级的编译器技术，RISC可以获得更强大的运算能力。
