@@ -58,8 +58,14 @@ HITTOM
 
 ## More
 如果本群感兴趣，也接受群规，请加群主微信并备注来意: constant_variation。谢谢！
-![](https://github.com/wfnuser/wfnuser/raw/main/qr.jpeg)
 
 ## 广告区
-可以关注微扰君的[力扣账号](https://leetcode-cn.com/u/wfnuser/) 每天都会更新每日一题
-也欢迎来微扰君开的剧本杀店[【悖论13】](http://www.dianping.com/shop/G3e08uNvVM4U5Hg3) 玩耍
+如果想更多的了解「微扰酱」，欢迎来关注我的个人公众号「微扰理论」和[知乎](https://www.zhihu.com/people/qin-hao-37)；或者直接微信扫码加微扰酱好友，交个朋友； 备注来意即可～
+![](https://github.com/wfnuser/wfnuser/raw/main/banner.png)
+微扰酱也是极客时间专栏[《算法实战高手课》](https://time.geekbang.org/column/intro/100100901?code=I%252F1%252FovCrth0wXifam7LWC3eGnJy9VdcYcfWACA1NG%252Fk%253D&utm_term=SPoster&page=A)的作者；欢迎订阅，一起学习工程实战中的算法。
+
+## Recent Posts
+* [ORCA 优化器浅析](https://mp.weixin.qq.com/s/1KnxeC7id1Gi5wD7HOu4sQ)
+* [Rust 和 Haskell 编程哲学（上）](https://mp.weixin.qq.com/s/lioFHcxgrv-_sANZQtUURg)
+* [如何盲拧魔方](https://mp.weixin.qq.com/s?__biz=Mzg4NzY3NDQzMQ==&mid=2247483773&idx=1&sn=ba8465f313595be8000e810e883db9e5&chksm=cf87822df8f00b3b7530006daef791b660c8150b7c6b85560f2d5370f7e2c151a3c3d6a34c94#rd)
+* [如何心算4位数乘法](https://mp.weixin.qq.com/s?__biz=Mzg4NzY3NDQzMQ==&mid=2247483756&idx=1&sn=51a1b1f921a89a9aabfb32e2c893a836&chksm=cf87823cf8f00b2a2eec13f02ff9cd14b991aedcde19a18057ca974bdf338ec0fac5e9c8107d#rd)
