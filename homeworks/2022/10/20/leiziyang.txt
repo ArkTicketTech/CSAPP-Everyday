@@ -1,0 +1,8 @@
+一条指令含有一个单字节的指令指示符（高4位是code，低4位是function），一个单字节的寄存器指示符和一个四字节的常数字
+movl指令分为了四个不同的指令：irmovl，rrmovl，mrmovl，rmmovl，源可以是立即数i 寄存器r和存储器m
+存储器的引用方式是基址+位移形式
+有四个整数指令操作addl，subl，andl，xorl，只对寄存器数据进行操作
+七个跳转指令，jmp，jle，jl，je，jne，jge，jg
+call指令将返回地址入栈，然后跳到目的地址，ret指令从这样的过程调用中返回
+pushl和popl实现了入栈和出栈
+halt指令停止指令的执行
