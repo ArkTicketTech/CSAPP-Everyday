@@ -1,0 +1,5 @@
+instr_valid 这个字节对应于一个合法的Y86指令吗
+need_regids 这个指令包括一个寄存器指示符字节吗
+need_valC 这个指令包括一个常数字吗
+need_regids为1时，字节1被分开装入寄存器指示符rA和rB中，否则这两个字段会被设置为RNONE
+PC增加器可以根据当前的PC以及两个信号need_regids和need_valC产生信号valP
