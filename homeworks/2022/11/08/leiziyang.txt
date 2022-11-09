@@ -1,0 +1,2 @@
+ALU根据alufun信号，对输入aluA和aluB执行四种运算中的一种，ALU的输出就是valE信号
+aluB对应valB， aluA对应valA或valC
