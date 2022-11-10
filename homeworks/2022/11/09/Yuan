@@ -1,0 +1,6 @@
+进程权限：
+uid 和 gid：注释是 real user/group id。一般，谁启动的进程，就是谁的 ID。
+但是权限审核的时候，往往不比较这两个，也就是说不大起作用。
+euid 和 egid：注释是 effective user/group id。
+当这个进程要操作消息队列、共享内存、信号量等对象的时候，其实就是在比较这个用户和组是否有权限。
+fsuid 和 fsgid：也就是 filesystem user/group id。这个是对文件操作会审核的权限。
