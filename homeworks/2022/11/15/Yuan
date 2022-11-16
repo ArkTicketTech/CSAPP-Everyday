@@ -1,0 +1,12 @@
+实模式下可能存在的问题：
+int main()
+{
+    int* addr = (int*)0;
+    cli(); //关中断
+    while(1)
+    {
+        *addr = 0;
+        addr++;
+    }
+    return 0;
+}
