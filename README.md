@@ -62,7 +62,7 @@ HITTOM
 
 ## 广告区
 如果想更多的了解「微扰酱」，欢迎来关注我的个人公众号「微扰理论」和[知乎](https://www.zhihu.com/people/qin-hao-37)；或者直接微信扫码加微扰酱好友，交个朋友； 备注来意即可～
-![](https://github.com/wfnuser/wfnuser/raw/main/banner.png)
+![](https://github.com/wfnuser/wfnuser/raw/main/banner.jpg)
 微扰酱也是极客时间专栏[《算法实战高手课》](https://time.geekbang.org/column/intro/100100901?code=I%252F1%252FovCrth0wXifam7LWC3eGnJy9VdcYcfWACA1NG%252Fk%253D&utm_term=SPoster&page=A)的作者；欢迎订阅，一起学习工程实战中的算法。
 
 ## Recent Posts
