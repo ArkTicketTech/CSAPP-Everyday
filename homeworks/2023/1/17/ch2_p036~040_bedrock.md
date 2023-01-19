@@ -1,4 +1,5 @@
 # 表示字符串
+C 语言中字符串被编码为一个以null （其值为0) 字符结尾的字符数组
 ```c
 const char *s = "abcdef";
 show_bytes((byte_pointer) s, strelen(s));
