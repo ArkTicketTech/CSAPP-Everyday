@@ -1,0 +1,6 @@
+- `movq` 指令：irmovq、rrmovq、mrmovq、rmmovq
+  - i: 立即数、r: 寄存器、m: 内存
+  - 显示地指明数据传送的类型，源目movq
+- 内存引用方式
+  - 简单的基址和偏移量形式，不支持第二变址寄存器(second index register)和任何寄存器值的伸缩(scaling)
+  - 不允许从一个内存地址直接传送到另一个地址，也不允许将立即数传到内存
