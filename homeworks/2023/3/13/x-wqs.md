@@ -1,0 +1,7 @@
+Linux提供了一些强大的函数，getaddrinfo和getnameinfo实现二进制套接字地质结构、主机名、主机地址、服务名和端口号的字符串表示之间的相互转换。
+getaddrinfo将主机名、主机地址、服务名和端口号的字符串表示转化为套接字地址结构。客户端调用了getaddrinfo后，会遍历列表，依次尝试每个套接字地址，直到调用socket和connect成功，建立链接。
+getnameinfo是将一个套接字地址结构转为相应的主机和服务名字符串。	
+open_clientfd 客户端与服务器建立链接
+open_listenfd，服务器创建一个监听描述符，准备好接收连接请求。
+pthread_create创建一个新的进程
+顶层的线程例程返回时，线程会隐式地终止，调用pthread_exit函数，线程会显式地终止
