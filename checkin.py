@@ -10,6 +10,8 @@ today = datetime.date.today()
 yesterday = today - datetime.timedelta(days=1)
 day_before_yesterday = today - datetime.timedelta(days=2)
 
+missed = 0
+
 # 检查每个人的打卡情况
 for user in users:
     # 检查最近两天的所有文件名
@@ -32,4 +34,7 @@ for user in users:
 
     # 检查打卡情况
     if not found:
+        missed = missed + 1
         print(f'{user} 今天没有打卡！')
+
+print(f'当前{len(users)}位同学参与打卡，{missed}位老板缺卡，缺卡率：{missed/len(users)*100:.2f}%。请发2元红包{len(users)-2}份，再发一个3元红包给我。谢谢老板！')
