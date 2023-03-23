@@ -1,5 +1,4 @@
 wfnuser
-bedrock
 holiday
 nekoken
 juju
