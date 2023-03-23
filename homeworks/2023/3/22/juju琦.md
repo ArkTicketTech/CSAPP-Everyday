@@ -1,7 +1,8 @@
 ## 一个进程打开2个不同的文件
 
 每个文件在当前进程中会生成2个描述符。   每个描述符在文件表中对应一个选项。 这是最典型的情况。
-![image](https://user-images.githubusercontent.com/18367460/227080899-9d21f23b-50e5-4919-9b59-8f9b63e0455a.png)
+![image](https://user-images.githubusercontent.com/18367460/227081001-10473aae-fd5e-452b-a72b-3958867dfc91.png)
+
 
 
 \- **出处**：《深入理解计算机系统》10.8 P670
