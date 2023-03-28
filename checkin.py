@@ -1,8 +1,12 @@
 import os
 import datetime
 
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)
+reader_path = os.path.join(script_dir, 'readers.txt')
+
 # 读取参与打卡的人员名单
-with open('readers.txt') as f:
+with open(reader_path) as f:
     users = [line.strip() for line in f.readlines()]
 
 # 获取当前日期和前两天日期
@@ -17,7 +21,8 @@ for user in users:
     # 检查最近两天的所有文件名
     found = False
     for folder in [yesterday, day_before_yesterday]:
-        folder_path = folder.strftime('./homeworks/%Y/%-m/%-d')
+        folder_path = folder.strftime('homeworks/%Y/%-m/%-d')
+        folder_path = os.path.join(script_dir, folder_path)
         for root, dirs, files in os.walk(folder_path):
             for file in files:
                 if user.lower() in file.lower():
