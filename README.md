@@ -67,7 +67,11 @@ HITTOM
 
 ## Recent Posts
 * [ORCA 优化器浅析](https://mp.weixin.qq.com/s/1KnxeC7id1Gi5wD7HOu4sQ)
+
 * [Rust 和 Haskell 编程哲学（上）](https://mp.weixin.qq.com/s/lioFHcxgrv-_sANZQtUURg)
+
 * [如何盲拧魔方](https://mp.weixin.qq.com/s?__biz=Mzg4NzY3NDQzMQ==&mid=2247483773&idx=1&sn=ba8465f313595be8000e810e883db9e5&chksm=cf87822df8f00b3b7530006daef791b660c8150b7c6b85560f2d5370f7e2c151a3c3d6a34c94#rd)
+
 * [如何心算4位数乘法](https://mp.weixin.qq.com/s?__biz=Mzg4NzY3NDQzMQ==&mid=2247483756&idx=1&sn=51a1b1f921a89a9aabfb32e2c893a836&chksm=cf87823cf8f00b2a2eec13f02ff9cd14b991aedcde19a18057ca974bdf338ec0fac5e9c8107d#rd)
-* Test
+
+	
