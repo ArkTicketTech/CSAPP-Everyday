@@ -4,5 +4,4 @@ holiday
 nekoken
 juju
 vacuumcat
-Qiqiqiqi
 smallwhite
