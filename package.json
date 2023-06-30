@@ -1,0 +1,20 @@
+{
+  "name": "csapp-everyday",
+  "version": "1.0.0",
+  "description": "<h3>本群残酷 谨慎进群❗️❗❗️</h3>",
+  "main": "index.js",
+  "scripts": {
+    "pre_commit": "python3 checkin.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArkTicketTech/CSAPP-Everyday.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArkTicketTech/CSAPP-Everyday/issues"
+  },
+  "homepage": "https://github.com/ArkTicketTech/CSAPP-Everyday#readme"
+}
