@@ -4,7 +4,7 @@
   "description": "<h3>本群残酷 谨慎进群❗️❗❗️</h3>",
   "main": "index.js",
   "scripts": {
-    "pre_commit": "python3 checkin.py"
+    "pre-commit": "python3 checkin.py"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/ArkTicketTech/CSAPP-Everyday/issues"
   },
-  "homepage": "https://github.com/ArkTicketTech/CSAPP-Everyday#readme"
+  "homepage": "https://github.com/ArkTicketTech/CSAPP-Everyday#readme",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
 }
+
