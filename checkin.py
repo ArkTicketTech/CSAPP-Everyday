@@ -15,11 +15,15 @@ yesterday = today - datetime.timedelta(days=1)
 day_before_yesterday = today - datetime.timedelta(days=2)
 
 missed = 0
+leave = 0
 
 # 检查每个人的打卡情况
 for user in users:
     # 检查最近两天的所有文件名
     found = False
+    if user[0] == '#' :
+        leave = leave + 1
+        continue
     for folder in [yesterday, day_before_yesterday]:
         folder_path = folder.strftime('homeworks/%Y/%-m/%-d')
         folder_path = os.path.join(script_dir, folder_path)
@@ -42,4 +46,6 @@ for user in users:
         missed = missed + 1
         print(f'{user} 今天没有打卡！')
 
-print(f'当前{len(users)}位同学参与打卡，{missed}位老板缺卡，缺卡率：{missed/len(users)*100:.2f}%。请发2元红包{len(users)-2}份，再发一个3元红包给我。谢谢老板！')
+attendees = len(users) - leave
+ 
+print(f'当前{attendees}位同学参与打卡，{missed}位老板缺卡，缺卡率：{missed/attendees*100:.2f}%。请发2元红包{attendees-2}份，再发一个3元红包给我。谢谢老板！')
