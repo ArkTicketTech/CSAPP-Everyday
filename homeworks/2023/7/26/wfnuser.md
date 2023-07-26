@@ -1,0 +1,8 @@
+- ## 8.4.4 Putting Processes to Sleep  
+	- `sleep` 可以让进程挂起一段时间  
+		- 一般情况下睡眠足够的时间会 return 0  
+		- 单又是会被 signal 打断并返回剩余需要睡眠的时间  
+- ## 8.5.5 Loading and Running Programs  
+	- `execve` 在当前上下文中加载并运行程序  
+	- argv 是参数列表； envp 是环境变量列表  
+	-  
