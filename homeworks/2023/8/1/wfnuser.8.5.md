@@ -1,0 +1,15 @@
+- ## 8.5.3 Receiving Signals  
+	- 进程从内核态切换回用户态之前会对 pending signals 集合做一次检查，如果集合为空则继续执行下一条指令，否则选择其中某个signal接收  
+	- signal会触发一些进程的行为，直到进程完成该行为再返回执行下一条指令  
+	- 下面是一些通用的默认行为：  
+		- The process terminates  
+		- The process terminates and dumps core.  
+		- The process stops (suspends) until restarted by a SIGCONT signal.  
+		- The process ignores the signal.  
+	- signal function 存在三种改变：  
+		- SIG_IGN - 忽视 signal  
+		- SIG_DFL - 默认行为  
+		- 用户自定义 - 传入handler地址到signal function来 installing the handler ; catching the signal ; handling the signal  
+	- handlers 会被其他 handler 打断  
+	-  
+	-  
