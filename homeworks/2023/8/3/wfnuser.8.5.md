@@ -1,0 +1,8 @@
+- ## 8.5.4 Blocking and Unblocking Signals  
+	- Implicit blocking mechanism  
+		- 默认情况下 内核会阻塞任何和当前正在处理的信号相同类型的信号  
+	- Explicit blocking mechanism  
+		- 通过 `sigprocmask` 和 helpers 实现  
+		- SIG_BLOCK - blocked = blocked | set  
+		- SIG_UNBLOCK - blocked = blocked & ~set  
+		- SIG_SETMASK - blocked = set  
