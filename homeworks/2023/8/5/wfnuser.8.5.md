@@ -1,0 +1,6 @@
+- ## 8.5.6 Synchronizing Flows to Avoid Nasty Concurrency Bugs  
+	- 并发程序访问同一 storage location 一直以来都是一个挑战  
+	- 这个问题的本质是要通过一些同步机制，让并发控制流可以正确工作并允许尽可能大程度的 interleaving  
+	- 12章 会讨论并发编程的细节； 在异常控制流里也会碰到类似的问题  
+	- 书中举了一个例子 - 进程创建子进程时 addjob 收到 SIGCHILD 时 delete job ； 但是可能出现子进程先结束，父进程还没有来得及 addjob 就要先 delete job 的情况  
+	- 这种情况，我们称为 race ； 如果 addjob 竞争胜利则没有问题，否则就会出现异常  
