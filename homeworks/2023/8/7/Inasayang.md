@@ -85,4 +85,4 @@ hello（可执行目标程序，二进制）
     - `printf`函数位于`printf.o`的单独的预编译好的目标文件中
     - `ld`把`printf.o`合并到`hello.o`中，得到`hello`
 
-Pp. 1-5
+Pp.1-5
