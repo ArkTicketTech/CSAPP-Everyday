@@ -1,0 +1,10 @@
+- # 8.6 Nonlocal Jumps  
+	- C 提供了 user-level 异常控制流 - non-local jump  
+		- transfer control directly from one function to another currently executing function without having to go through the normal call-and-return sequence  
+		- `setjmp` `longjmp`  
+	- setjmp 用于保存当前的 calling environment 包括 程序计数器、栈、通用寄存器 等  
+	- longjmp 恢复 calling environment 并返回至最近的 setjmp 调用  
+	-  
+	- setjmp 调用一次，返回多次，一次是调用并保存环境的时候，剩下每次 longjmp 调用都会返回； longjmp 调用则从来不返回；  
+	- 一个常见应用是在很深的栈中我们可以直接返回，通常用于错误发生时  
+	- 下面也是另一个常见应用，用来对信号进行branch，并跳转到特定位置而不是回到触发信号的地方  
