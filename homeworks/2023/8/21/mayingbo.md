@@ -1,0 +1,16 @@
+### 8.20
+
+1.Linux中的文件是一系列m个字节： B0，B1，...，Bk，...，Bm-1 所有I/O设备（如网络、磁盘和终端）都被建模为文件，并且所有输入和输出都通过读取和写入相应的文件来执行。设备到文件的映射允许Linux内核导出一个简单、低级的应用程序接口，称为Unix I/O，使得所有的输入和输出都可以以统一和一致的方式执行。
+
+相应的简单文件操作包括：
+
+1.open
+
+2.close
+
+3.change pos
+
+4.read and wirte
+
+5.在nfs3中，仅支持read/write/symlink/readlink,这几种可以为其他的type，（> rdam_thresh）,其他的应该都为inline
+
