@@ -2,6 +2,7 @@
 
 阅读页数：P68-P72
 
+
 ## 第二章： Representing and Manipulating Information
 
 三种最重要的信息编码方式：
