@@ -1,0 +1,13 @@
+- # 9.4 VM as a Tool for Memory Management  
+	- 上一节中主要阐述了 VM 提供了一种使用 DRAM 缓存更大的虚拟地址空间页的机制； VM 除此之外其实也提供了一种有效简单的管理内存机制  
+	- 实际上 操作系统为每个进程都提供了一个 page table 也就是对应了一个独立的虚拟地址空间  
+	- VM 简化了 linking \ loading \ sharing of code and data \ allocating memory 的过程  
+	- simplifying linking  
+		- 所有的进程在内存中都有类似的内存格式 - code segment 总是从是 0x400000 开始； stack 都是从最高的地址空间开始往低地址空间展开的  
+	- simplifying loading  
+		- 装载 .o 和 .so 也会更容易； load .text 和 .data 到新的进程时， linux loader 分配虚拟内存给 code 和 data segments，但是设置为 invalid，然后将 page table 指向 object file 的对应位置  
+		- 所以装载的过程里，并行没有真的从磁盘copy任何数据到内存中  
+	- simplifying sharing  
+		- 对于类似于 printf 这样的 c 标准库函数；多个程序会共享对应的代码区。 多个进程共享同样一份代码的拷贝，通过让每个进程的虚拟地址空间指向同一些物理内存页即可  
+	- simplifying memory allocation  
+		- 程序malloc一段连续的虚拟内存，实则在物理内存中可以是不连续的  
