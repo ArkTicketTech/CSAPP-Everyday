@@ -28,3 +28,5 @@ x, & x\leq TMax_w \\
 x-2^{w}, & x > TMax_w
 \end{array}\right.
 $$
+
+
