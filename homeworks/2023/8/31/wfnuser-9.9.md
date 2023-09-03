@@ -1,0 +1,6 @@
+- # 9.9 Dynamic Memory Allocation  
+	- 完全用 mmap 和 munmap 来管理内存是可实现的，但一般来说程序员会采用 动态内存分配器 来管理在运行时需要额外申请的内存。  
+	- dynamic memory allocator 维护的进程虚拟内存区域称为 heap ； 堆的空间从 uninitialized data area 开始往高地址增长，每个进程有一个 brk 变量，指向了堆的顶部  
+	- 堆由一组变长的 blocks 构成； 每个 block 是一个连续的 chunk of virtual memory ；要么是 allocated 要么是 free ； 只有显示的分配和释放会改变block的状态  
+	- 分配器有两种实现 - 一种是纯显式的，比如c，完全依赖开发者自己调用 malloc 和 free 来管理内存； 另一种是隐式的，各种垃圾回收器就是这样的实现， Lisp，ML，Java都依赖着垃圾回收器去释放申请的内存  
+	- 在一些特殊的场景下，比如密集对图进行操作的场景中，应用开发者常用标准分配器分配一个非常大的内存空间，然后用为应用特定实现的分配器去管理内存  
