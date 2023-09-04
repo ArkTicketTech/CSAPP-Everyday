@@ -27,4 +27,4 @@ U 2 T_{w}(x)=\left\{\begin{array}{ll}
 x, & x\leq TMax_w \\
 x-2^{w}, & x > TMax_w
 \end{array}\right.
-$$
+
