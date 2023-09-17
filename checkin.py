@@ -48,4 +48,4 @@ for user in users:
 
 attendees = len(users) - leave
  
-print(f'当前{attendees}位同学参与打卡，{missed}位老板缺卡，缺卡率：{missed/attendees*100:.2f}%。请发2元红包{attendees-2}份，再发一个3元红包给我。谢谢老板！')
+print(f'当前{attendees}位同学参与打卡，{missed}位老板缺卡，缺卡率：{missed/attendees*100:.2f}%。请发2元红包{attendees-1}份。谢谢老板！')
