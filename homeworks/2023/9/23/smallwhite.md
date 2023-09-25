@@ -1,0 +1,2 @@
+- select，poll以及大名鼎鼎的epoll就是IO多路复用模型，其特点就在于单个系统调用可以同时处理多个网络连接的IO，它的基本原理就是select/poll/epoll这个function会不断的轮询所负责的所有socket，当某个socket有数据到达了，就通知用户进程
+- 当用户进程调用了select/poll/epoll，整个进程会被阻塞，而同时，kernel会“监视”所有select/poll/epoll负责的socket，当任何一个socket中的数据准备好了，select/poll/epoll就会返回。这个时候用户进程再调用recvfrom操作，将数据从内核缓冲区拷贝到用户进程缓冲区·
